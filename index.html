@@ -33,6 +33,121 @@
         <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
       </div>
 
+      <!-- Table 1: Planning for Writing Expressions -->
+      <h6 class="mt-5">Table 1. Planning for Writing Expressions</h6>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Common Variable Goals</th>
+            <th scope="col">Definition</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Fixed value</th>
+            <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
+            <td>1.1</td>
+          </tr>
+          <tr>
+            <th scope="row">Stepper</th>
+            <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <th scope="row">Most-recent holder</th>
+            <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+            <td>1.3</td>
+          </tr>
+          <tr>
+            <th scope="row">Most-wanted holder</th>
+            <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+            <td>1.4</td>
+          </tr>
+          <tr>
+            <th scope="row">Gatherer</th>
+            <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
+            <td>1.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Follwer</th>
+            <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
+            <td>1.6</td>
+          </tr>
+          <tr>
+            <th scope="row">One-way flag</th>
+            <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
+            <td>1.7</td>
+          </tr>
+          <tr>
+            <th scope="row">Temporary</th>
+            <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
+            <td>1.8</td>
+          </tr>
+          <tr>
+            <th scope="row">Organizer</th>
+            <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
+            <td>1.9</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="3">
+              <p>Subgoals for writing expressions</p>
+              <p style="font-weight:normal">
+                1. Determine expression that will yield variable <br>
+                2. Determine data type and name of variable and data type of expression<br>
+                3. Determine arithmetic equation with operators<br>
+                4. Determine expression components<br>
+                5. Operators and operands must be compatible<br>
+              </p>
+              <p>Subgoals for writing arrays</p>
+              <p style="font-weight:normal">
+                1. Data type plus []<br>
+                2. Variable name = {initializer list}, or new data type [size]
+              </p>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      </br>
+
+      <!-- Table 2: Planning for Writing Selection Statements -->
+      <h6 class="mt-5">Table 2. Planning for Writing Selection Statements</h6>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Common selection algorithm</th>
+            <th scope="col">Definition</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Input validation</th>
+            <td>Ensure that the next input is a specific data type</td>
+            <td>2.1</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="3">
+              <p>Subgoals for selection statements</p>
+              <p style="font-weight:normal">
+                1. Determine how many exclusive paths are needed<br>
+                2. Order from most restrictive/selective group to least restrictive<br>
+                3. Write if statement with Boolean expression<br>
+                4. Follow with true bracket including action <br>
+                5. Follow with else bracket<br>
+                6. Repeat until all groups and actions are accounted for<br>
+              </p>
+              <p>Subgoals for writing arrays</p>
+              <p style="font-weight:normal">
+                1. Data type plus []<br>
+                2. Variable name = {initializer list}, or new data type [size]
+              </p>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
       <!-- Table 3. Planning for writing loop algorithms -->
       <h6 class="mt-5">Table 3. Planning for writing loop algorithms</h6>
       <table class="table table-bordered">
@@ -195,34 +310,32 @@
     <tbody>
       <tr>
         <td scope="row">
-        <p><strong>  Subgoals for writing methods </strong></p>
-        <p>
-          1. Define method header based on problem </br>
-          2. Define return statement at the end </br>
-          3. Define method body/logic </br>
-           a. Determine types of logic (expression, selection, loop, etc.) </br>
-           b. Define internal variables </br>
-           c. Write statements </br>
-         </p>
+          <p><strong>  Subgoals for writing methods </strong></p>
+          <p>
+            1. Define method header based on problem </br>
+            2. Define return statement at the end </br>
+            3. Define method body/logic </br>
+            a. Determine types of logic (expression, selection, loop, etc.) </br>
+            b. Define internal variables </br>
+            c. Write statements </br>
+          </p>
         </td>
       </tr>
       <tr>
         <td scope="row">
-        <p><strong>  Subgoals for writing methods </strong></p>
-        <p>
-          1. Define method header based on problem </br>
-          2. Define return statement at the end </br>
-          3. Define method body/logic </br>
-           a. Determine types of logic (expression, selection, loop, etc.) </br>
-           b. Define internal variables </br>
-           c. Write statements </br>
-         </p>
+          <p><strong>  Subgoals for writing methods </strong></p>
+          <p>
+            1. Define method header based on problem </br>
+            2. Define return statement at the end </br>
+            3. Define method body/logic </br>
+            a. Determine types of logic (expression, selection, loop, etc.) </br>
+            b. Define internal variables </br>
+            c. Write statements </br>
+          </p>
         </td>
       </tr>
     </tbody>
   </table>
-
-
 </div>
 </div>
 
