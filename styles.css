@@ -13,3 +13,11 @@ p.single{
 p.double{
     text-indent: 40px;
 }
+
+ul li div{
+    margin-left: 5%;
+}
+
+ul li div label{
+    margin-left: 5%;
+}
