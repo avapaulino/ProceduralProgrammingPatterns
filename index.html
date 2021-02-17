@@ -46,47 +46,47 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr id="1.1">
             <th scope="row">Fixed value</th>
             <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
             <td>1.1</td>
           </tr>
-          <tr>
+          <tr id="1.2">
             <th scope="row">Stepper</th>
             <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
             <td>1.2</td>
           </tr>
-          <tr>
+          <tr id="1.3">
             <th scope="row">Most-recent holder</th>
             <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
             <td>1.3</td>
           </tr>
-          <tr>
+          <tr id="1.4">
             <th scope="row">Most-wanted holder</th>
             <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
             <td>1.4</td>
           </tr>
-          <tr>
+          <tr id="1.5">
             <th scope="row">Gatherer</th>
             <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
             <td>1.5</td>
           </tr>
-          <tr>
+          <tr id="1.6">
             <th scope="row">Follwer</th>
             <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
             <td>1.6</td>
           </tr>
-          <tr>
+          <tr id="1.7">
             <th scope="row">One-way flag</th>
             <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
             <td>1.7</td>
           </tr>
-          <tr>
+          <tr id="1.8">
             <th scope="row">Temporary</th>
             <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
             <td>1.8</td>
           </tr>
-          <tr>
+          <tr id="1.9">
             <th scope="row">Organizer</th>
             <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
             <td>1.9</td>
@@ -101,6 +101,7 @@
                 4. Determine expression components<br>
                 5. Operators and operands must be compatible<br>
               </p>
+              <br>
               <p>Subgoals for writing arrays</p>
               <p style="font-weight:normal">
                 1. Data type plus []<br>
@@ -140,6 +141,7 @@
                 5. Follow with else bracket<br>
                 6. Repeat until all groups and actions are accounted for<br>
               </p>
+              <br>
               <p>Subgoals for writing arrays</p>
               <p style="font-weight:normal">
                 1. Data type plus []<br>
@@ -199,15 +201,15 @@
           <tr>
             <th scope="row" colspan="3">
               <p>  Subgoals for writing loops </p>
-              <p style="font-weight:normal">
+              <div style="font-weight: normal">
                 1. Determine purpose of loop </br>
-                a. Pick a loop structure (while, for, do_while) </br>
+                <p class="single">a. Pick a loop structure (while, for, do_while)</p>
                 2. Define and initialize variables </br>
                 3. Determine termination condition </br>
-                a. Invert termination condition to continuation condition </br>
+                <p class="single">a. Invert termination condition to continuation condition </p>
                 4. Write loop body </br>
-                a. Update loop control variable to reach termination </br>
-              </p>
+                <p class="single">a. Update loop control variable to reach termination </p>
+              </div>
             </th>
 
           </tr>
@@ -287,15 +289,15 @@
         <tr>
           <th scope="row" colspan="3">
             <p>  Subgoals for writing loops </p>
-            <p style="font-weight:normal">
+            <div style="font-weight:normal">
               1. Determine purpose of loop </br>
-              a. Pick a loop structure (while, for, do_while) </br>
+              <p class="single">a. Pick a loop structure (while, for, do_while) </p>
               2. Define and initialize variables </br>
               3. Determine termination condition </br>
-              a. Invert termination condition to continuation condition </br>
+              <p class="single">a. Invert termination condition to continuation condition </p>
               4. Write loop body </br>
-              a. Update loop control variable to reach termination </br>
-            </p>
+              <p class="single">a. Update loop control variable to reach termination </p>
+            </div>
           </th>
 
         </tr>
@@ -313,27 +315,23 @@
       <tr>
         <td scope="row">
           <p><strong>  Subgoals for writing methods </strong></p>
-          <p>
-            1. Define method header based on problem </br>
-            2. Define return statement at the end </br>
-            3. Define method body/logic </br>
-            a. Determine types of logic (expression, selection, loop, etc.) </br>
-            b. Define internal variables </br>
-            c. Write statements </br>
-          </p>
+          1. Define method header based on problem </br>
+          2. Define return statement at the end </br>
+          3. Define method body/logic </br>
+          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+          <p class="single">b. Define internal variables </p>
+            <p class="single">c. Write statements </p>
         </td>
       </tr>
       <tr>
         <td scope="row">
           <p><strong>  Subgoals for writing methods </strong></p>
-          <p>
-            1. Define method header based on problem </br>
-            2. Define return statement at the end </br>
-            3. Define method body/logic </br>
-            a. Determine types of logic (expression, selection, loop, etc.) </br>
-            b. Define internal variables </br>
-            c. Write statements </br>
-          </p>
+          1. Define method header based on problem </br>
+          2. Define return statement at the end </br>
+          3. Define method body/logic </br>
+          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+          <p class="single">b. Define internal variables </p>
+          <p class="single">c. Write statements </p>
         </td>
       </tr>
     </tbody>
@@ -348,54 +346,54 @@
       <!--Example 3.1-->
       <div class="card card-body mt-3 col-lg-12">
         <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
-        Initialize SENTINEL_VALUE to "-1", theLetter [1.1], count to 0 [1.5], word to input [1.3]<br>
+        <p>Initialize SENTINEL_VALUE to "-1", theLetter <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a>, word to input <a href="#1.3">[1.3]</a></p>
         While word is not equal to SENTINEL VALUE<br>
-        <!--indented-->If first character of word is equal to the letter<br>
-        <!--indented x2-->Increment count<br>
-        <!--indented-->Set word to input<br>
+        <p class="single">If first character of word is equal to the letter</p>
+        <p class="double">Increment count</p>
+        <p class="single">Set word to input</p>
         Print count
       </div>
 
       <!--Example 3.2-->
       <div class="card card-body mt-3 col-lg-12">
-        <strong>Sum and Average</strong>
-        Initialize sum to 0 [1.5], quantity to 0 [1.5], number to input [1.3]<br>
+        <strong>Loop Algorithm - Sum and Average [3.2]</strong>
+        <p>Initialize sum to 0 <a href="#1.5">[1.5]</a>, quantity to 0 <a href="#1.5">[1.5]</a>, number to input <a href="#1.3">[1.3]</a></p>
         While number is greater to equal to 0<br>
-        <!--indented-->Set sum to addition of sum and number<br>
-        <!--indented-->Increment quantity<br>
-        <!--indented-->Set number to input<br>
+        <p class="single">Set sum to addition of sum and number</p>
+        <p class="single">Increment quantity</p>
+        <p class="single">Set number to input</p>
         Print sum divided by quantity
       </div>
 
       <!--Example 3.3-->
       <div class="card card-body mt-3 col-lg-12">
         <strong>Loop Algorithm - Counting Matches [3.3]</strong>
-        Initialize word to input [1.3], LETTER to 'c' [1.1], count to 0 [1.5]<br>
-        For each character in word [1.2]<br>
-        <!--indented-->If character in word matches LETTER<br>
-        <!--indented x2-->Increment count<br>
+        <p>Initialize word to input <a href="#1.3">[1.3]</a>, LETTER to 'c' <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a></p>
+        <p>For each character in word <a href="#1.2">[1.2]</a></p>
+        <p class="single">If character in word matches LETTER</p>
+        <p class="double">Increment count</p>
         Print count
       </div>
 
       <!--Example 3.4-->
       <div class="card card-body mt-3 col-lg-12">
         <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
-        For each character in word starting from the last [1.2]<br>
-        <!--indented-->If character in word matches LETTER and is Found is equal to false<br>
-        <!--indented x2-->Print index of the matching character<br>
-        <!--indented x2-->Set isFound to true<br>
+        <p>For each character in word starting from the last <a href="#1.2">[1.2]</a><br>
+        <p class="single">If character in word matches LETTER and is Found is equal to false</p>
+        <p class="double">Print index of the matching character</p>
+        <p class="double">Set isFound to true</p>
       </div>
 
       <!--Example 3.6-->
       <div class="card card-body mt-3 col-lg-12">
         <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
-        Initialize number to input [1.3], min [1.4], max [1.4]<br>
+        <p>Initialize number to input <a href="#1.3">[1.3]</a>, min <a href="#1.4">[1.4]</a>, max <a href="#1.4">[1.4]</a></p>
         While number is greater than max<br>
-        <!--indented-->If number is greater than max<br>
-        <!--indented x2-->Set max to number<br>
-        <!--indented-->If number is less than min<br>
-        <!--indented x2-->Set min to number<br>
-        <!--indented-->Set number to input<br>
+        <p class="single">If number is greater than max</p>
+        <p class="double">Set max to number</p>
+        <p class="single">If number is less than min<p>
+        <p class="double">Set min to number</p>
+        <p class="single">Set number to input</p>
         Print max and min
       </div>
 
@@ -403,139 +401,121 @@
       <div class="card card-body mt-3 col-lg-12">
         // Concatenate unique numbers only<br>
         <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
-        Initialize number to input [1.3], allNumbers to concatenation of "" and number [1.5]<br>
+        <p>Initialize number to input <a href="#1.3">[1.3]</a>, allNumbers to concatenation of "" and number <a href="#1.5">[1.5]</a></p>
         While number is greater than 0<br>
-        <!--indented-->Initialize previous to number [1.6]<br>
-        <!--indented-->Set number to input<br>
-        <!--indented-->If number is equal to previous<br>
-        <!--indented x2-->Print "No duplicated allowed" and skip line<br>
-        <!--indented-->Else if number is not equal to 0<br>
-        <!--indented x2-->Set allNumbers to concatenation of allNumbers and number<br>
+        <p class="single">Initialize previous to number <a href="#1.6">[1.6]</a></p>
+        <p class="single">Set number to input</p>
+        <p class="single">If number is equal to previous</p>
+        <p class="double">Print "No duplicated allowed" and skip line</p>
+        <p class="single">Else if number is not equal to 0</p>
+        <p class="double">Set allNumbers to concatenation of allNumbers and number</p>
         Print allNumbers and skip line
       </div>
 
       <!-- example 4.1 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>  Array Algorithm – Filling [4.1] </strong></br>
-        Declare myArray, an array of 5 int elements [1.9] </br>
-        For i = 0 to length of myArray [1.2] </br>
-        <div style="text-indent: 20px">  Set myArray at index to i to the addition of i and 4 </div></br>
-
+        <strong>  Array Algorithm – Filling [4.1] </strong>
+        <p>Declare myArray, an array of 5 int elements <a href="#1.9">[1.9]</a><br>
+        For i = 0 to length of myArray <a href="#1.2">[1.2]</a> </p>
+        <p class="single">  Set myArray at index to i to the addition of i and 4 </p>
       </div>
 
-    </br>
       <!-- example 4.2 -->
       <div class ="card card-body mt-3 col-lg-12" >
-       <strong>   Array Algorithm – Sum and Average [4.2] </strong></br>
-        Initialize numbers, an array of 10 int elements [1.9], sum to 0 [1.5] </br>
-        For each number of numbers [1.2] </br>
-        <div style="text-indent: 20px">Set sum to the addition of sum and number </div></br>
+        <strong>   Array Algorithm – Sum and Average [4.2] </strong>
+        <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, sum to 0 <a href="#1.5">[1.5]</a> </br>
+          For each number of numbers <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set sum to the addition of sum and number </p>
         Print the sum and average values </br>
-
       </div>
 
       <!-- example 4.3 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong></br>
-        Initialize numbers, an array of 10 int elements [1.9], min to numbers element at index 0 [1.4], max to numbers element at index 0 [1.4] </br>
-        For i = 0 to length of numbers [1.2] </br>
-        <div style="text-indent: 20px">If numbers element at index i is greater than max </div></br>
-        <div style="text-indent: 40px">Set max to numbers element at index i </div></br>
-        <div style="text-indent: 20px">If numbers element at index i is lesser than min </div></br>
-        <div style="text-indent: 40px">Set min to numbers element at index i </div></br>
+        <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong>
+        <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, min to numbers element at index 0 <a href="1.4">[1.4]</a>, max to numbers element at index 0 <a href="#1.4">[1.4]</a><br>
+        For i = 0 to length of numbers <a href="#1.2">[1.2]</a></p>
+        <p class="single">If numbers element at index i is greater than max</p>
+        <p class="double">Set max to numbers element at index i </p>
+        <p class="single">If numbers element at index i is lesser than min</p>
+        <p class="double">Set min to numbers element at index i</p>
         Print the min and max values </br>
-
       </div>
 
       <!-- example 4.4 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – Element Separators [4.4] </strong></br>
-
-        Initialize numbers, an array of 10 int elements [1.9] </br>
-        For i = 0 to length of numbers [1.2] </br>
-        <div style="text-indent: 20px">If index is not equal to 0 </div></br>
-        <div style="text-indent: 40px">Print the separator | </div></br>
-        <div style="text-indent: 20px">Print numbers element at index i </div></br>
+        <strong>   Array Algorithm – Element Separators [4.4] </strong>
+        <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a> </br>
+        For i = 0 to length of numbers <a href="#1.2">[1.2]</a> </p>
+        <p class="single">If index is not equal to 0</p>
+        <p class="double">Print the separator |</p>
+        <p class="single">Print numbers element at index i</p>
         Print skip line </br>
-
-
       </div>
 
 
       <!-- example 4.5 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – Linear Search [4.5] </strong></br>
-        Initialize numbers, an array of 10 int elements [1.9], numberToFind to 15 [1.1], i to 0 [1.5], isFound to false [1.7] </br>
-        While i is lesser than length of numbers and isFound is false </br>
-        <div style="text-indent: 20px">If numbers at index i is equal to numberToFind </div></br>
-        <div style="text-indent: 40px">Set isFound to true </div></br>
-        <div style="text-indent: 20px">Increment i </div></br>
+        <strong>   Array Algorithm – Linear Search [4.5] </strong>
+        <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, numberToFind to 15 <a href="#1.1">[1.1]</a>, i to 0 <a href="#1.5">[1.5]</a>, isFound to false <a href="#1.7">[1.7]</a> </br>
+        While i is lesser than length of numbers and isFound is false </p>
+        <p class="single">If numbers at index i is equal to numberToFind </p>
+        <p class="double">Set isFound to true </p>
+        <p class="single">Increment i </p>
         If isFound is true </br>
-        <div style="text-indent: 20px">Print “The position is: ” and the subtraction of i and 1 and skip a line </div></br>
+        <p class="single">Print “The position is: ” and the subtraction of i and 1 and skip a line </p>
         Else </br>
-        <div style="text-indent: 20px">Print “not found!” and skip a line </div></br>
-
-
+        <p class="single">Print “not found!” and skip a line </p>
       </div>
 
 
       <!-- example 4.6 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – Removing Elements [4.6] </strong></br>
-
-        Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-        For i = 0 to length – 3 of myNumbers [1.2] </br>
-        <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-        <div style="text-indent: 20px">Increment currentSize </div></br>
+        <strong>   Array Algorithm – Removing Elements [4.6] </strong>
+        <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+        For i = 0 to length – 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+        <p class="single">Increment currentSize </p>
         Initialize indexToRemove to 2 </br>
-        For i = indexToRemove to currentSize [1.2] </br>
-        <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  + 1 </div></br>
+        <p>For i = indexToRemove to currentSize <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set myNumbers element at index i to element of myNumbers at index i  + 1 </p>
         Decrement currentSize </br>
-
       </div>
 
 
       <!-- example 4.7 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – Inserting Elements [4.7] </strong></br>
-
-        Initialize  myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-        For i = 0 to length - 3 of myNumbers [1.2] </br>
-        <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-        <div style="text-indent: 20px">Increment currentSize </div></br>
-        For i = currentSize to i greater than 4 [1.2] </br>
-        <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  - 1 </div></br>
+        <strong>   Array Algorithm – Inserting Elements [4.7] </strong>
+        <p>Initialize  myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+        For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+        <p class="single">Increment currentSize </p>
+        <p>For i = currentSize to i greater than 4 <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set myNumbers element at index i to element of myNumbers at index i  - 1 </p>
         Set myNumbers at index 4 to 10 </br>
         Increment currentSize </br>
-
-
       </div>
 
 
       <!-- example 4.8 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – Swapping Elements [4.8] </strong></br>
-        Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-        For i = 0 to length - 3 of myNumbers [1.2] </br>
-        <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-        <div style="text-indent: 20px">Increment currentSize </div></br>
-        Initialize temp to muNumbers element at index 3 [1.8] </br>
+        <strong>   Array Algorithm – Swapping Elements [4.8] </strong>
+        <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+        For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+        <p class="single">Increment currentSize </p>
+        <p>Initialize temp to muNumbers element at index 3 <a href="#1.8">[1.8]</a> </p>
         Set myNumbers element at index 3 to value of element from myNumbers at index 5 </br>
         Set myNumbers element at index 5 with value of temp </br>
-
-
       </div>
 
 
       <!-- example 4.11 -->
       <div class ="card card-body mt-3 col-lg-12">
-      <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong> </br>
-        Initialize originalArray, an array of 2 int elements [1.9] </br>
-        Declare newArrayIncreased, an array of 4 int elements [1.9] </br>
-        For i = 0, to length of originalArray [1.2] </br>
-        <div style="text-indent: 20px">Set newArrayIncreased element at index i element of originalArray at index i </div></br>
-
-
+        <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong>
+        <p>Initialize originalArray, an array of 2 int elements <a href="#1.9">[1.9]</a> </br>
+        Declare newArrayIncreased, an array of 4 int elements <a href="#1.9">[1.9]</a> </br>
+        For i = 0, to length of originalArray <a href="#1.2">[1.2]</a> </p>
+        <p class="single">Set newArrayIncreased element at index i element of originalArray at index i </p>
       </div>
     </div>
   </div>
