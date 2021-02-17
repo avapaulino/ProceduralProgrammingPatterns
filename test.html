@@ -2,608 +2,591 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+  <title>Collapsible sidebar using Bootstrap 4</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="./style2.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="./style2.css">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style2.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Bootstrap Sidebar</h3>
+      </div>
 
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
+      <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
+        <li class="active">
+          <div class="custom-control custom-checkbox checkbox-lg">
+            <input type="checkbox" class="custom-control-input" id="checkbox-1" checked="">
+            <label class="custom-control-label" for="checkbox-1">Large checkbox</label>
+          </div>
+        </li>
+        <li>
+          <div class="custom-control custom-checkbox checkbox-lg">
+            <input type="checkbox" class="custom-control-input" id="checkbox-2" checked="">
+            <label class="custom-control-label" for="checkbox-2">Large checkbox</label>
+          </div>
+        </li>
 
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+        <li>
+          <div class="custom-control custom-checkbox checkbox-lg">
+            <input type="checkbox" class="custom-control-input" id="checkbox-3" checked="">
+            <label class="custom-control-label" for="checkbox-3">Large checkbox</label>
+          </div>
+        </li>
+        <li>
+          <div class="custom-control custom-checkbox checkbox-lg">
+            <input type="checkbox" class="custom-control-input" id="checkbox-4" checked="">
+            <label class="custom-control-label" for="checkbox-4">Large checkbox</label>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
         </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-            </nav>
-            <div class="col-lg-12 text-center">
-              <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-              <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-            </div>
-            <!-- Table 1: Planning for Writing Expressions -->
-            <h6 class="mt-5">Table 1. Planning for Writing Expressions</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Common Variable Goals</th>
-                  <th scope="col">Definition</th>
-                  <th scope="col">Example</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Fixed value</th>
-                  <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
-                  <td>1.1</td>
-                </tr>
-                <tr>
-                  <th scope="row">Stepper</th>
-                  <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
-                  <td>1.2</td>
-                </tr>
-                <tr>
-                  <th scope="row">Most-recent holder</th>
-                  <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
-                  <td>1.3</td>
-                </tr>
-                <tr>
-                  <th scope="row">Most-wanted holder</th>
-                  <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
-                  <td>1.4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Gatherer</th>
-                  <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
-                  <td>1.5</td>
-                </tr>
-                <tr>
-                  <th scope="row">Follwer</th>
-                  <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
-                  <td>1.6</td>
-                </tr>
-                <tr>
-                  <th scope="row">One-way flag</th>
-                  <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
-                  <td>1.7</td>
-                </tr>
-                <tr>
-                  <th scope="row">Temporary</th>
-                  <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
-                  <td>1.8</td>
-                </tr>
-                <tr>
-                  <th scope="row">Organizer</th>
-                  <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
-                  <td>1.9</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="3">
-                    <p>Subgoals for writing expressions</p>
-                    <p style="font-weight:normal">
-                      1. Determine expression that will yield variable <br>
-                      2. Determine data type and name of variable and data type of expression<br>
-                      3. Determine arithmetic equation with operators<br>
-                      4. Determine expression components<br>
-                      5. Operators and operands must be compatible<br>
-                    </p>
-                    <p>Subgoals for writing arrays</p>
-                    <p style="font-weight:normal">
-                      1. Data type plus []<br>
-                      2. Variable name = {initializer list}, or new data type [size]
-                    </p>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
-
-            </br>
-
-            <!-- Table 2: Planning for Writing Selection Statements -->
-            <h6 class="mt-5">Table 2. Planning for Writing Selection Statements</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Common selection algorithm</th>
-                  <th scope="col">Definition</th>
-                  <th scope="col">Example</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Input validation</th>
-                  <td>Ensure that the next input is a specific data type</td>
-                  <td>2.1</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="3">
-                    <p>Subgoals for selection statements</p>
-                    <p style="font-weight:normal">
-                      1. Determine how many exclusive paths are needed<br>
-                      2. Order from most restrictive/selective group to least restrictive<br>
-                      3. Write if statement with Boolean expression<br>
-                      4. Follow with true bracket including action <br>
-                      5. Follow with else bracket<br>
-                      6. Repeat until all groups and actions are accounted for<br>
-                    </p>
-                    <p>Subgoals for writing arrays</p>
-                    <p style="font-weight:normal">
-                      1. Data type plus []<br>
-                      2. Variable name = {initializer list}, or new data type [size]
-                    </p>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Table 3. Planning for writing loop algorithms -->
-            <h6 class="mt-5">Table 3. Planning for writing loop algorithms</h6>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Common loop algorithm</th>
-                  <th scope="col">Definition</th>
-                  <th scope="col">Example</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Processing a sentinel</th>
-                  <td>A sentinel value denotes the end of a data set, but it is not part of the data.</td>
-                  <td>3.1</td>
-                </tr>
-                <tr>
-                  <th scope="row">Sum and average value</th>
-                  <td>To compute an average, keep a total and a count of all values</td>
-                  <td>3.2</td>
-                </tr>
-                <tr>
-                  <th scope="row">Counting matches</th>
-                  <td>To count values that fulfill a condition, check all values and increment a counter for each match.</td>
-                  <td>3.3</td>
-                </tr>
-                <tr>
-                  <th scope="row">Finding the first match</th>
-                  <td >If your goal is to find a match, exit the loop when the match is found.</td>
-                  <td>3.4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Prompting until a match is found</th>
-                  <td >Keep asking the user to provide a correct input</td>
-                  <td>3.5</td>
-                </tr>
-                <tr>
-                  <th scope="row">Maximum and minimum</th>
-                  <td >To find the largest value, update the largest value seen so far whenever you see a larger one</td>
-                  <td>3.6</td>
-                </tr>
-                <tr>
-                  <th scope="row">Comparing adjacent values</th>
-                  <td >To compare adjacent inputs, store the preceding input in a variable</td>
-                  <td>3.7</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="3">
-                    <p>  Subgoals for writing loops </p>
-                    <p style="font-weight:normal">
-                      1. Determine purpose of loop </br>
-                      a. Pick a loop structure (while, for, do_while) </br>
-                      2. Define and initialize variables </br>
-                      3. Determine termination condition </br>
-                      a. Invert termination condition to continuation condition </br>
-                      4. Write loop body </br>
-                      a. Update loop control variable to reach termination </br>
-                    </p>
-                  </th>
-
-                </tr>
-              </tbody>
-            </table>
-
-
-          </br>
-
-
-          <!-- Table 4: Planning for writing array algorithm -->
-          <h6 class="mt-5">Table 4. Planning for writing array algorithms</h6>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Common array algorithm</th>
-                <th scope="col">Definition</th>
-                <th scope="col">Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Filling</th>
-                <td>A loop fills an array with some values.</td>
-                <td>4.1</td>
-              </tr>
-              <tr>
-                <th scope="row">Sum and average value</th>
-                <td>To compute an average, keep a total and a count of all values.</td>
-                <td>4.2</td>
-              </tr>
-              <tr>
-                <th scope="row">Maximum and minimum</th>
-                <td >To find the largest value, update the largest value seen so far whenever you see a larger one.</td>
-                <td>4.3</td>
-              </tr>
-              <tr>
-                <th scope="row">Element separators</th>
-                <td >To display the elements of an array, you usually want to separate them, often with commas or vertical lines.</td>
-                <td>4.4</td>
-              </tr>
-              <tr>
-                <th scope="row">Linear search</th>
-                <td >A linear search inspects elements in sequence until a match is found.</td>
-                <td>4.5</td>
-              </tr>
-              <tr>
-                <th scope="row">Removing and element</th>
-                <td >Remove an element at a given index position from the array values.</td>
-                <td>4.6</td>
-              </tr>
-              <tr>
-                <th scope="row">Inserting an element</th>
-                <td >Use a temporary variable when swapping two elements.</td>
-                <td>4.7</td>
-              </tr>
-              <tr>
-                <th scope="row">Swapping elements</th>
-                <td >Insert an element into an array by moving elements to the end of the array starting with the last one.</td>
-                <td>4.8</td>
-              </tr>
-              <tr>
-                <th scope="row">Copying arrays</th>
-                <td >Use the Arrays.copyOf method to copy the elements of an array into a new array.</td>
-                <td>4.9</td>
-              </tr>
-              <tr>
-                <th scope="row">Reading input</th>
-                <td >Add the inputs to an array until the end of the input has been reached.</td>
-                <td>4.10</td>
-              </tr>
-              <tr>
-                <th scope="row">Growing arrays</th>
-                <td >Grow an array to hold all inputs.</td>
-                <td>4.11</td>
-              </tr>
-              <tr>
-                <th scope="row" colspan="3">
-                  <p>  Subgoals for writing loops </p>
-                  <p style="font-weight:normal">
-                    1. Determine purpose of loop </br>
-                    a. Pick a loop structure (while, for, do_while) </br>
-                    2. Define and initialize variables </br>
-                    3. Determine termination condition </br>
-                    a. Invert termination condition to continuation condition </br>
-                    4. Write loop body </br>
-                    a. Update loop control variable to reach termination </br>
-                  </p>
-                </th>
-
-              </tr>
-            </tbody>
-          </table>
-
-
-        </br>
-
-
-        <!-- Table 5. Planning for writing methods and classes -->
-        <h6 class="mt-5">Table 5. Planning for writing methods and classes</h6>
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+        </div>
+        <!-- Table 1: Planning for Writing Expressions -->
+        <h6 class="mt-5">Table 1. Planning for Writing Expressions</h6>
         <table class="table table-bordered">
-          <tbody>
+          <thead>
             <tr>
-              <td scope="row">
-                <p><strong>  Subgoals for writing methods </strong></p>
-                <p>
-                  1. Define method header based on problem </br>
-                  2. Define return statement at the end </br>
-                  3. Define method body/logic </br>
-                  a. Determine types of logic (expression, selection, loop, etc.) </br>
-                  b. Define internal variables </br>
-                  c. Write statements </br>
-                </p>
-              </td>
+              <th scope="col">Common Variable Goals</th>
+              <th scope="col">Definition</th>
+              <th scope="col">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="1.1">
+              <th scope="row">Fixed value</th>
+              <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
+              <td>1.1</td>
+            </tr>
+            <tr id="1.2">
+              <th scope="row">Stepper</th>
+              <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
+              <td>1.2</td>
+            </tr>
+            <tr id="1.3">
+              <th scope="row">Most-recent holder</th>
+              <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+              <td>1.3</td>
+            </tr>
+            <tr id="1.4">
+              <th scope="row">Most-wanted holder</th>
+              <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+              <td>1.4</td>
+            </tr>
+            <tr id="1.5">
+              <th scope="row">Gatherer</th>
+              <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
+              <td>1.5</td>
+            </tr>
+            <tr id="1.6">
+              <th scope="row">Follwer</th>
+              <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
+              <td>1.6</td>
+            </tr>
+            <tr id="1.7">
+              <th scope="row">One-way flag</th>
+              <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
+              <td>1.7</td>
+            </tr>
+            <tr id="1.8">
+              <th scope="row">Temporary</th>
+              <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
+              <td>1.8</td>
+            </tr>
+            <tr id="1.9">
+              <th scope="row">Organizer</th>
+              <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
+              <td>1.9</td>
             </tr>
             <tr>
-              <td scope="row">
-                <p><strong>  Subgoals for writing methods </strong></p>
-                <p>
-                  1. Define method header based on problem </br>
-                  2. Define return statement at the end </br>
-                  3. Define method body/logic </br>
-                  a. Determine types of logic (expression, selection, loop, etc.) </br>
-                  b. Define internal variables </br>
-                  c. Write statements </br>
+              <th scope="row" colspan="3">
+                <p>Subgoals for writing expressions</p>
+                <p style="font-weight:normal">
+                  1. Determine expression that will yield variable <br>
+                  2. Determine data type and name of variable and data type of expression<br>
+                  3. Determine arithmetic equation with operators<br>
+                  4. Determine expression components<br>
+                  5. Operators and operands must be compatible<br>
                 </p>
-              </td>
+                <br>
+                <p>Subgoals for writing arrays</p>
+                <p style="font-weight:normal">
+                  1. Data type plus []<br>
+                  2. Variable name = {initializer list}, or new data type [size]
+                </p>
+              </th>
             </tr>
           </tbody>
         </table>
 
-        </br>
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">Pseudocode examples</h1>
+      </br>
+
+      <!-- Table 2: Planning for Writing Selection Statements -->
+      <h6 class="mt-5">Table 2. Planning for Writing Selection Statements</h6>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Common selection algorithm</th>
+            <th scope="col">Definition</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Input validation</th>
+            <td>Ensure that the next input is a specific data type</td>
+            <td>2.1</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="3">
+              <p>Subgoals for selection statements</p>
+              <p style="font-weight:normal">
+                1. Determine how many exclusive paths are needed<br>
+                2. Order from most restrictive/selective group to least restrictive<br>
+                3. Write if statement with Boolean expression<br>
+                4. Follow with true bracket including action <br>
+                5. Follow with else bracket<br>
+                6. Repeat until all groups and actions are accounted for<br>
+              </p>
+              <br>
+              <p>Subgoals for writing arrays</p>
+              <p style="font-weight:normal">
+                1. Data type plus []<br>
+                2. Variable name = {initializer list}, or new data type [size]
+              </p>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Table 3. Planning for writing loop algorithms -->
+      <h6 class="mt-5">Table 3. Planning for writing loop algorithms</h6>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Common loop algorithm</th>
+            <th scope="col">Definition</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Processing a sentinel</th>
+            <td>A sentinel value denotes the end of a data set, but it is not part of the data.</td>
+            <td>3.1</td>
+          </tr>
+          <tr>
+            <th scope="row">Sum and average value</th>
+            <td>To compute an average, keep a total and a count of all values</td>
+            <td>3.2</td>
+          </tr>
+          <tr>
+            <th scope="row">Counting matches</th>
+            <td>To count values that fulfill a condition, check all values and increment a counter for each match.</td>
+            <td>3.3</td>
+          </tr>
+          <tr>
+            <th scope="row">Finding the first match</th>
+            <td >If your goal is to find a match, exit the loop when the match is found.</td>
+            <td>3.4</td>
+          </tr>
+          <tr>
+            <th scope="row">Prompting until a match is found</th>
+            <td >Keep asking the user to provide a correct input</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Maximum and minimum</th>
+            <td >To find the largest value, update the largest value seen so far whenever you see a larger one</td>
+            <td>3.6</td>
+          </tr>
+          <tr>
+            <th scope="row">Comparing adjacent values</th>
+            <td >To compare adjacent inputs, store the preceding input in a variable</td>
+            <td>3.7</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="3">
+              <p>  Subgoals for writing loops </p>
+              <div style="font-weight: normal">
+                1. Determine purpose of loop </br>
+                <p class="single">a. Pick a loop structure (while, for, do_while)</p>
+                2. Define and initialize variables </br>
+                3. Determine termination condition </br>
+                <p class="single">a. Invert termination condition to continuation condition </p>
+                4. Write loop body </br>
+                <p class="single">a. Update loop control variable to reach termination </p>
+              </div>
+            </th>
+
+          </tr>
+        </tbody>
+      </table>
+
+
+    </br>
+
+
+    <!-- Table 4: Planning for writing array algorithm -->
+    <h6 class="mt-5">Table 4. Planning for writing array algorithms</h6>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Common array algorithm</th>
+          <th scope="col">Definition</th>
+          <th scope="col">Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Filling</th>
+          <td>A loop fills an array with some values.</td>
+          <td>4.1</td>
+        </tr>
+        <tr>
+          <th scope="row">Sum and average value</th>
+          <td>To compute an average, keep a total and a count of all values.</td>
+          <td>4.2</td>
+        </tr>
+        <tr>
+          <th scope="row">Maximum and minimum</th>
+          <td >To find the largest value, update the largest value seen so far whenever you see a larger one.</td>
+          <td>4.3</td>
+        </tr>
+        <tr>
+          <th scope="row">Element separators</th>
+          <td >To display the elements of an array, you usually want to separate them, often with commas or vertical lines.</td>
+          <td>4.4</td>
+        </tr>
+        <tr>
+          <th scope="row">Linear search</th>
+          <td >A linear search inspects elements in sequence until a match is found.</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">Removing and element</th>
+          <td >Remove an element at a given index position from the array values.</td>
+          <td>4.6</td>
+        </tr>
+        <tr>
+          <th scope="row">Inserting an element</th>
+          <td >Use a temporary variable when swapping two elements.</td>
+          <td>4.7</td>
+        </tr>
+        <tr>
+          <th scope="row">Swapping elements</th>
+          <td >Insert an element into an array by moving elements to the end of the array starting with the last one.</td>
+          <td>4.8</td>
+        </tr>
+        <tr>
+          <th scope="row">Copying arrays</th>
+          <td >Use the Arrays.copyOf method to copy the elements of an array into a new array.</td>
+          <td>4.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Reading input</th>
+          <td >Add the inputs to an array until the end of the input has been reached.</td>
+          <td>4.10</td>
+        </tr>
+        <tr>
+          <th scope="row">Growing arrays</th>
+          <td >Grow an array to hold all inputs.</td>
+          <td>4.11</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="3">
+            <p>  Subgoals for writing loops </p>
+            <div style="font-weight:normal">
+              1. Determine purpose of loop </br>
+              <p class="single">a. Pick a loop structure (while, for, do_while) </p>
+              2. Define and initialize variables </br>
+              3. Determine termination condition </br>
+              <p class="single">a. Invert termination condition to continuation condition </p>
+              4. Write loop body </br>
+              <p class="single">a. Update loop control variable to reach termination </p>
+            </div>
+          </th>
+
+        </tr>
+      </tbody>
+    </table>
+
+
+  </br>
+
+
+  <!-- Table 5. Planning for writing methods and classes -->
+  <h6 class="mt-5">Table 5. Planning for writing methods and classes</h6>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td scope="row">
+          <p><strong>  Subgoals for writing methods </strong></p>
+          1. Define method header based on problem </br>
+          2. Define return statement at the end </br>
+          3. Define method body/logic </br>
+          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+          <p class="single">b. Define internal variables </p>
+          <p class="single">c. Write statements </p>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row">
+          <p><strong>  Subgoals for writing methods </strong></p>
+          1. Define method header based on problem </br>
+          2. Define return statement at the end </br>
+          3. Define method body/logic </br>
+          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+          <p class="single">b. Define internal variables </p>
+          <p class="single">c. Write statements </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</br>
+<div class="col-lg-12 text-center">
+  <h1 class="mt-5">Pseudocode examples</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <!--Example 3.1-->
+    <div class="card card-body mt-3 col-lg-12">
+      <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
+      <p>Initialize SENTINEL_VALUE to "-1", theLetter <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a>, word to input <a href="#1.3">[1.3]</a></p>
+      While word is not equal to SENTINEL VALUE<br>
+      <p class="single">If first character of word is equal to the letter</p>
+      <p class="double">Increment count</p>
+      <p class="single">Set word to input</p>
+      Print count
+    </div>
+
+    <!--Example 3.2-->
+    <div class="card card-body mt-3 col-lg-12">
+      <strong>Loop Algorithm - Sum and Average [3.2]</strong>
+      <p>Initialize sum to 0 <a href="#1.5">[1.5]</a>, quantity to 0 <a href="#1.5">[1.5]</a>, number to input <a href="#1.3">[1.3]</a></p>
+      While number is greater to equal to 0<br>
+      <p class="single">Set sum to addition of sum and number</p>
+      <p class="single">Increment quantity</p>
+      <p class="single">Set number to input</p>
+      Print sum divided by quantity
+    </div>
+
+    <!--Example 3.3-->
+    <div class="card card-body mt-3 col-lg-12">
+      <strong>Loop Algorithm - Counting Matches [3.3]</strong>
+      <p>Initialize word to input <a href="#1.3">[1.3]</a>, LETTER to 'c' <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a></p>
+      <p>For each character in word <a href="#1.2">[1.2]</a></p>
+      <p class="single">If character in word matches LETTER</p>
+      <p class="double">Increment count</p>
+      Print count
+    </div>
+
+    <!--Example 3.4-->
+    <div class="card card-body mt-3 col-lg-12">
+      <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
+      <p>For each character in word starting from the last <a href="#1.2">[1.2]</a><br>
+        <p class="single">If character in word matches LETTER and is Found is equal to false</p>
+        <p class="double">Print index of the matching character</p>
+        <p class="double">Set isFound to true</p>
+      </div>
+
+      <!--Example 3.6-->
+      <div class="card card-body mt-3 col-lg-12">
+        <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
+        <p>Initialize number to input <a href="#1.3">[1.3]</a>, min <a href="#1.4">[1.4]</a>, max <a href="#1.4">[1.4]</a></p>
+        While number is greater than max<br>
+        <p class="single">If number is greater than max</p>
+        <p class="double">Set max to number</p>
+        <p class="single">If number is less than min<p>
+          <p class="double">Set min to number</p>
+          <p class="single">Set number to input</p>
+          Print max and min
         </div>
-        <div class="container">
-          <div class="row">
-            <!--Example 3.1-->
-            <div class="card card-body mt-3 col-lg-12">
-              <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
-              Initialize SENTINEL_VALUE to "-1", theLetter [1.1], count to 0 [1.5], word to input [1.3]<br>
-              While word is not equal to SENTINEL VALUE<br>
-              <!--indented-->If first character of word is equal to the letter<br>
-              <!--indented x2-->Increment count<br>
-              <!--indented-->Set word to input<br>
-              Print count
-            </div>
 
-            <!--Example 3.2-->
-            <div class="card card-body mt-3 col-lg-12">
-              <strong>Sum and Average</strong>
-              Initialize sum to 0 [1.5], quantity to 0 [1.5], number to input [1.3]<br>
-              While number is greater to equal to 0<br>
-              <!--indented-->Set sum to addition of sum and number<br>
-              <!--indented-->Increment quantity<br>
-              <!--indented-->Set number to input<br>
-              Print sum divided by quantity
-            </div>
+        <!--Example 3.7-->
+        <div class="card card-body mt-3 col-lg-12">
+          // Concatenate unique numbers only<br>
+          <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
+          <p>Initialize number to input <a href="#1.3">[1.3]</a>, allNumbers to concatenation of "" and number <a href="#1.5">[1.5]</a></p>
+          While number is greater than 0<br>
+          <p class="single">Initialize previous to number <a href="#1.6">[1.6]</a></p>
+          <p class="single">Set number to input</p>
+          <p class="single">If number is equal to previous</p>
+          <p class="double">Print "No duplicated allowed" and skip line</p>
+          <p class="single">Else if number is not equal to 0</p>
+          <p class="double">Set allNumbers to concatenation of allNumbers and number</p>
+          Print allNumbers and skip line
+        </div>
 
-            <!--Example 3.3-->
-            <div class="card card-body mt-3 col-lg-12">
-              <strong>Loop Algorithm - Counting Matches [3.3]</strong>
-              Initialize word to input [1.3], LETTER to 'c' [1.1], count to 0 [1.5]<br>
-              For each character in word [1.2]<br>
-              <!--indented-->If character in word matches LETTER<br>
-              <!--indented x2-->Increment count<br>
-              Print count
-            </div>
+        <!-- example 4.1 -->
+        <div class ="card card-body mt-3 col-lg-12">
+          <strong>  Array Algorithm – Filling [4.1] </strong>
+          <p>Declare myArray, an array of 5 int elements <a href="#1.9">[1.9]</a><br>
+            For i = 0 to length of myArray <a href="#1.2">[1.2]</a> </p>
+            <p class="single">  Set myArray at index to i to the addition of i and 4 </p>
+          </div>
 
-            <!--Example 3.4-->
-            <div class="card card-body mt-3 col-lg-12">
-              <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
-              For each character in word starting from the last [1.2]<br>
-              <!--indented-->If character in word matches LETTER and is Found is equal to false<br>
-              <!--indented x2-->Print index of the matching character<br>
-              <!--indented x2-->Set isFound to true<br>
-            </div>
-
-            <!--Example 3.6-->
-            <div class="card card-body mt-3 col-lg-12">
-              <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
-              Initialize number to input [1.3], min [1.4], max [1.4]<br>
-              While number is greater than max<br>
-              <!--indented-->If number is greater than max<br>
-              <!--indented x2-->Set max to number<br>
-              <!--indented-->If number is less than min<br>
-              <!--indented x2-->Set min to number<br>
-              <!--indented-->Set number to input<br>
-              Print max and min
-            </div>
-
-            <!--Example 3.7-->
-            <div class="card card-body mt-3 col-lg-12">
-              // Concatenate unique numbers only<br>
-              <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
-              Initialize number to input [1.3], allNumbers to concatenation of "" and number [1.5]<br>
-              While number is greater than 0<br>
-              <!--indented-->Initialize previous to number [1.6]<br>
-              <!--indented-->Set number to input<br>
-              <!--indented-->If number is equal to previous<br>
-              <!--indented x2-->Print "No duplicated allowed" and skip line<br>
-              <!--indented-->Else if number is not equal to 0<br>
-              <!--indented x2-->Set allNumbers to concatenation of allNumbers and number<br>
-              Print allNumbers and skip line
-            </div>
-
-            <!-- example 4.1 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>  Array Algorithm – Filling [4.1] </strong></br>
-              Declare myArray, an array of 5 int elements [1.9] </br>
-              For i = 0 to length of myArray [1.2] </br>
-              <div style="text-indent: 20px">  Set myArray at index to i to the addition of i and 4 </div></br>
-
-            </div>
-
-          </br>
-            <!-- example 4.2 -->
-            <div class ="card card-body mt-3 col-lg-12" >
-             <strong>   Array Algorithm – Sum and Average [4.2] </strong></br>
-              Initialize numbers, an array of 10 int elements [1.9], sum to 0 [1.5] </br>
-              For each number of numbers [1.2] </br>
-              <div style="text-indent: 20px">Set sum to the addition of sum and number </div></br>
+          <!-- example 4.2 -->
+          <div class ="card card-body mt-3 col-lg-12" >
+            <strong>   Array Algorithm – Sum and Average [4.2] </strong>
+            <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, sum to 0 <a href="#1.5">[1.5]</a> </br>
+              For each number of numbers <a href="#1.2">[1.2]</a> </p>
+              <p class="single">Set sum to the addition of sum and number </p>
               Print the sum and average values </br>
-
             </div>
 
             <!-- example 4.3 -->
             <div class ="card card-body mt-3 col-lg-12">
-            <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong></br>
-              Initialize numbers, an array of 10 int elements [1.9], min to numbers element at index 0 [1.4], max to numbers element at index 0 [1.4] </br>
-              For i = 0 to length of numbers [1.2] </br>
-              <div style="text-indent: 20px">If numbers element at index i is greater than max </div></br>
-              <div style="text-indent: 40px">Set max to numbers element at index i </div></br>
-              <div style="text-indent: 20px">If numbers element at index i is lesser than min </div></br>
-              <div style="text-indent: 40px">Set min to numbers element at index i </div></br>
-              Print the min and max values </br>
+              <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong>
+              <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, min to numbers element at index 0 <a href="1.4">[1.4]</a>, max to numbers element at index 0 <a href="#1.4">[1.4]</a><br>
+                For i = 0 to length of numbers <a href="#1.2">[1.2]</a></p>
+                <p class="single">If numbers element at index i is greater than max</p>
+                <p class="double">Set max to numbers element at index i </p>
+                <p class="single">If numbers element at index i is lesser than min</p>
+                <p class="double">Set min to numbers element at index i</p>
+                Print the min and max values </br>
+              </div>
 
-            </div>
-
-            <!-- example 4.4 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – Element Separators [4.4] </strong></br>
-
-              Initialize numbers, an array of 10 int elements [1.9] </br>
-              For i = 0 to length of numbers [1.2] </br>
-              <div style="text-indent: 20px">If index is not equal to 0 </div></br>
-              <div style="text-indent: 40px">Print the separator | </div></br>
-              <div style="text-indent: 20px">Print numbers element at index i </div></br>
-              Print skip line </br>
-
-
-            </div>
+              <!-- example 4.4 -->
+              <div class ="card card-body mt-3 col-lg-12">
+                <strong>   Array Algorithm – Element Separators [4.4] </strong>
+                <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a> </br>
+                  For i = 0 to length of numbers <a href="#1.2">[1.2]</a> </p>
+                  <p class="single">If index is not equal to 0</p>
+                  <p class="double">Print the separator |</p>
+                  <p class="single">Print numbers element at index i</p>
+                  Print skip line </br>
+                </div>
 
 
-            <!-- example 4.5 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – Linear Search [4.5] </strong></br>
-              Initialize numbers, an array of 10 int elements [1.9], numberToFind to 15 [1.1], i to 0 [1.5], isFound to false [1.7] </br>
-              While i is lesser than length of numbers and isFound is false </br>
-              <div style="text-indent: 20px">If numbers at index i is equal to numberToFind </div></br>
-              <div style="text-indent: 40px">Set isFound to true </div></br>
-              <div style="text-indent: 20px">Increment i </div></br>
-              If isFound is true </br>
-              <div style="text-indent: 20px">Print “The position is: ” and the subtraction of i and 1 and skip a line </div></br>
-              Else </br>
-              <div style="text-indent: 20px">Print “not found!” and skip a line </div></br>
+                <!-- example 4.5 -->
+                <div class ="card card-body mt-3 col-lg-12">
+                  <strong>   Array Algorithm – Linear Search [4.5] </strong>
+                  <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, numberToFind to 15 <a href="#1.1">[1.1]</a>, i to 0 <a href="#1.5">[1.5]</a>, isFound to false <a href="#1.7">[1.7]</a> </br>
+                    While i is lesser than length of numbers and isFound is false </p>
+                    <p class="single">If numbers at index i is equal to numberToFind </p>
+                    <p class="double">Set isFound to true </p>
+                    <p class="single">Increment i </p>
+                    If isFound is true </br>
+                    <p class="single">Print “The position is: ” and the subtraction of i and 1 and skip a line </p>
+                    Else </br>
+                    <p class="single">Print “not found!” and skip a line </p>
+                  </div>
 
 
-            </div>
+                  <!-- example 4.6 -->
+                  <div class ="card card-body mt-3 col-lg-12">
+                    <strong>   Array Algorithm – Removing Elements [4.6] </strong>
+                    <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+                      For i = 0 to length – 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+                      <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                      <p class="single">Increment currentSize </p>
+                      Initialize indexToRemove to 2 </br>
+                      <p>For i = indexToRemove to currentSize <a href="#1.2">[1.2]</a> </p>
+                      <p class="single">Set myNumbers element at index i to element of myNumbers at index i  + 1 </p>
+                      Decrement currentSize </br>
+                    </div>
 
 
-            <!-- example 4.6 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – Removing Elements [4.6] </strong></br>
-
-              Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-              For i = 0 to length – 3 of myNumbers [1.2] </br>
-              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-              <div style="text-indent: 20px">Increment currentSize </div></br>
-              Initialize indexToRemove to 2 </br>
-              For i = indexToRemove to currentSize [1.2] </br>
-              <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  + 1 </div></br>
-              Decrement currentSize </br>
-
-            </div>
+                    <!-- example 4.7 -->
+                    <div class ="card card-body mt-3 col-lg-12">
+                      <strong>   Array Algorithm – Inserting Elements [4.7] </strong>
+                      <p>Initialize  myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+                        For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+                        <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                        <p class="single">Increment currentSize </p>
+                        <p>For i = currentSize to i greater than 4 <a href="#1.2">[1.2]</a> </p>
+                        <p class="single">Set myNumbers element at index i to element of myNumbers at index i  - 1 </p>
+                        Set myNumbers at index 4 to 10 </br>
+                        Increment currentSize </br>
+                      </div>
 
 
-            <!-- example 4.7 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – Inserting Elements [4.7] </strong></br>
-
-              Initialize  myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-              For i = 0 to length - 3 of myNumbers [1.2] </br>
-              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-              <div style="text-indent: 20px">Increment currentSize </div></br>
-              For i = currentSize to i greater than 4 [1.2] </br>
-              <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  - 1 </div></br>
-              Set myNumbers at index 4 to 10 </br>
-              Increment currentSize </br>
-
-
-            </div>
+                      <!-- example 4.8 -->
+                      <div class ="card card-body mt-3 col-lg-12">
+                        <strong>   Array Algorithm – Swapping Elements [4.8] </strong>
+                        <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
+                          For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
+                          <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                          <p class="single">Increment currentSize </p>
+                          <p>Initialize temp to muNumbers element at index 3 <a href="#1.8">[1.8]</a> </p>
+                          Set myNumbers element at index 3 to value of element from myNumbers at index 5 </br>
+                          Set myNumbers element at index 5 with value of temp </br>
+                        </div>
 
 
-            <!-- example 4.8 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – Swapping Elements [4.8] </strong></br>
-              Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
-              For i = 0 to length - 3 of myNumbers [1.2] </br>
-              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
-              <div style="text-indent: 20px">Increment currentSize </div></br>
-              Initialize temp to muNumbers element at index 3 [1.8] </br>
-              Set myNumbers element at index 3 to value of element from myNumbers at index 5 </br>
-              Set myNumbers element at index 5 with value of temp </br>
+                        <!-- example 4.11 -->
+                        <div class ="card card-body mt-3 col-lg-12">
+                          <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong>
+                          <p>Initialize originalArray, an array of 2 int elements <a href="#1.9">[1.9]</a> </br>
+                            Declare newArrayIncreased, an array of 4 int elements <a href="#1.9">[1.9]</a> </br>
+                            For i = 0, to length of originalArray <a href="#1.2">[1.2]</a> </p>
+                            <p class="single">Set newArrayIncreased element at index i element of originalArray at index i </p>
+                          </div>
+                        </div>
+                      </div>
 
+                      <!-- jQuery CDN - Slim version (=without AJAX) -->
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <!-- Popper.JS -->
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                      <!-- Bootstrap JS -->
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                      <!-- jQuery Custom Scroller CDN -->
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-            </div>
+                      <script type="text/javascript">
+                      $(document).ready(function () {
+                        $("#sidebar").mCustomScrollbar({
+                          theme: "minimal"
+                        });
 
+                        $('#sidebarCollapse').on('click', function () {
+                          $('#sidebar, #content').toggleClass('active');
+                          $('.collapse.in').toggleClass('in');
+                          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                        });
+                      });
+                      </script>
+                    </body>
 
-            <!-- example 4.11 -->
-            <div class ="card card-body mt-3 col-lg-12">
-            <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong> </br>
-              Initialize originalArray, an array of 2 int elements [1.9] </br>
-              Declare newArrayIncreased, an array of 4 int elements [1.9] </br>
-              For i = 0, to length of originalArray [1.2] </br>
-              <div style="text-indent: 20px">Set newArrayIncreased element at index i element of originalArray at index i </div></br>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-</body>
-
-</html>
+                    </html>

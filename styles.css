@@ -1,0 +1,49 @@
+div p {
+    margin-bottom: 0;
+}
+
+div p p{
+    margin-bottom: 0;
+}
+
+p.single{
+    text-indent: 20px;
+}
+
+p.double{
+    text-indent: 40px;
+}
+
+
+.checkbox-lg .custom-control-label::before,
+.checkbox-lg .custom-control-label::after {
+  top: .8rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  text-indent: 20px;
+
+}
+
+.checkbox-lg .custom-control-label {
+  padding-top: 13px;
+  padding-left: 6px;
+  text-indent: 20px;
+
+}
+
+
+.checkbox-xl .custom-control-label::before,
+.checkbox-xl .custom-control-label::after {
+  top: 1.2rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  text-indent: 20px;
+
+}
+
+.checkbox-xl .custom-control-label {
+  padding-top: 23px;
+  padding-left: 10px;
+  text-indent: 20px;
+
+}
