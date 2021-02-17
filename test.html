@@ -381,6 +381,204 @@
           </tbody>
         </table>
 
+        </br>
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Pseudocode examples</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!--Example 3.1-->
+            <div class="card card-body mt-3 col-lg-12">
+              <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
+              Initialize SENTINEL_VALUE to "-1", theLetter [1.1], count to 0 [1.5], word to input [1.3]<br>
+              While word is not equal to SENTINEL VALUE<br>
+              <!--indented-->If first character of word is equal to the letter<br>
+              <!--indented x2-->Increment count<br>
+              <!--indented-->Set word to input<br>
+              Print count
+            </div>
+
+            <!--Example 3.2-->
+            <div class="card card-body mt-3 col-lg-12">
+              <strong>Sum and Average</strong>
+              Initialize sum to 0 [1.5], quantity to 0 [1.5], number to input [1.3]<br>
+              While number is greater to equal to 0<br>
+              <!--indented-->Set sum to addition of sum and number<br>
+              <!--indented-->Increment quantity<br>
+              <!--indented-->Set number to input<br>
+              Print sum divided by quantity
+            </div>
+
+            <!--Example 3.3-->
+            <div class="card card-body mt-3 col-lg-12">
+              <strong>Loop Algorithm - Counting Matches [3.3]</strong>
+              Initialize word to input [1.3], LETTER to 'c' [1.1], count to 0 [1.5]<br>
+              For each character in word [1.2]<br>
+              <!--indented-->If character in word matches LETTER<br>
+              <!--indented x2-->Increment count<br>
+              Print count
+            </div>
+
+            <!--Example 3.4-->
+            <div class="card card-body mt-3 col-lg-12">
+              <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
+              For each character in word starting from the last [1.2]<br>
+              <!--indented-->If character in word matches LETTER and is Found is equal to false<br>
+              <!--indented x2-->Print index of the matching character<br>
+              <!--indented x2-->Set isFound to true<br>
+            </div>
+
+            <!--Example 3.6-->
+            <div class="card card-body mt-3 col-lg-12">
+              <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
+              Initialize number to input [1.3], min [1.4], max [1.4]<br>
+              While number is greater than max<br>
+              <!--indented-->If number is greater than max<br>
+              <!--indented x2-->Set max to number<br>
+              <!--indented-->If number is less than min<br>
+              <!--indented x2-->Set min to number<br>
+              <!--indented-->Set number to input<br>
+              Print max and min
+            </div>
+
+            <!--Example 3.7-->
+            <div class="card card-body mt-3 col-lg-12">
+              // Concatenate unique numbers only<br>
+              <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
+              Initialize number to input [1.3], allNumbers to concatenation of "" and number [1.5]<br>
+              While number is greater than 0<br>
+              <!--indented-->Initialize previous to number [1.6]<br>
+              <!--indented-->Set number to input<br>
+              <!--indented-->If number is equal to previous<br>
+              <!--indented x2-->Print "No duplicated allowed" and skip line<br>
+              <!--indented-->Else if number is not equal to 0<br>
+              <!--indented x2-->Set allNumbers to concatenation of allNumbers and number<br>
+              Print allNumbers and skip line
+            </div>
+
+            <!-- example 4.1 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>  Array Algorithm – Filling [4.1] </strong></br>
+              Declare myArray, an array of 5 int elements [1.9] </br>
+              For i = 0 to length of myArray [1.2] </br>
+              <div style="text-indent: 20px">  Set myArray at index to i to the addition of i and 4 </div></br>
+
+            </div>
+
+          </br>
+            <!-- example 4.2 -->
+            <div class ="card card-body mt-3 col-lg-12" >
+             <strong>   Array Algorithm – Sum and Average [4.2] </strong></br>
+              Initialize numbers, an array of 10 int elements [1.9], sum to 0 [1.5] </br>
+              For each number of numbers [1.2] </br>
+              <div style="text-indent: 20px">Set sum to the addition of sum and number </div></br>
+              Print the sum and average values </br>
+
+            </div>
+
+            <!-- example 4.3 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong></br>
+              Initialize numbers, an array of 10 int elements [1.9], min to numbers element at index 0 [1.4], max to numbers element at index 0 [1.4] </br>
+              For i = 0 to length of numbers [1.2] </br>
+              <div style="text-indent: 20px">If numbers element at index i is greater than max </div></br>
+              <div style="text-indent: 40px">Set max to numbers element at index i </div></br>
+              <div style="text-indent: 20px">If numbers element at index i is lesser than min </div></br>
+              <div style="text-indent: 40px">Set min to numbers element at index i </div></br>
+              Print the min and max values </br>
+
+            </div>
+
+            <!-- example 4.4 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – Element Separators [4.4] </strong></br>
+
+              Initialize numbers, an array of 10 int elements [1.9] </br>
+              For i = 0 to length of numbers [1.2] </br>
+              <div style="text-indent: 20px">If index is not equal to 0 </div></br>
+              <div style="text-indent: 40px">Print the separator | </div></br>
+              <div style="text-indent: 20px">Print numbers element at index i </div></br>
+              Print skip line </br>
+
+
+            </div>
+
+
+            <!-- example 4.5 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – Linear Search [4.5] </strong></br>
+              Initialize numbers, an array of 10 int elements [1.9], numberToFind to 15 [1.1], i to 0 [1.5], isFound to false [1.7] </br>
+              While i is lesser than length of numbers and isFound is false </br>
+              <div style="text-indent: 20px">If numbers at index i is equal to numberToFind </div></br>
+              <div style="text-indent: 40px">Set isFound to true </div></br>
+              <div style="text-indent: 20px">Increment i </div></br>
+              If isFound is true </br>
+              <div style="text-indent: 20px">Print “The position is: ” and the subtraction of i and 1 and skip a line </div></br>
+              Else </br>
+              <div style="text-indent: 20px">Print “not found!” and skip a line </div></br>
+
+
+            </div>
+
+
+            <!-- example 4.6 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – Removing Elements [4.6] </strong></br>
+
+              Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
+              For i = 0 to length – 3 of myNumbers [1.2] </br>
+              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
+              <div style="text-indent: 20px">Increment currentSize </div></br>
+              Initialize indexToRemove to 2 </br>
+              For i = indexToRemove to currentSize [1.2] </br>
+              <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  + 1 </div></br>
+              Decrement currentSize </br>
+
+            </div>
+
+
+            <!-- example 4.7 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – Inserting Elements [4.7] </strong></br>
+
+              Initialize  myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
+              For i = 0 to length - 3 of myNumbers [1.2] </br>
+              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
+              <div style="text-indent: 20px">Increment currentSize </div></br>
+              For i = currentSize to i greater than 4 [1.2] </br>
+              <div style="text-indent: 20px">Set myNumbers element at index i to element of myNumbers at index i  - 1 </div></br>
+              Set myNumbers at index 4 to 10 </br>
+              Increment currentSize </br>
+
+
+            </div>
+
+
+            <!-- example 4.8 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – Swapping Elements [4.8] </strong></br>
+              Initialize myNumbers, an array of 10 int elements [1.9], currentSize to 0 [1.5] </br>
+              For i = 0 to length - 3 of myNumbers [1.2] </br>
+              <div style="text-indent: 20px">Set myNumbers at index to i to the addition of i and 1 </div></br>
+              <div style="text-indent: 20px">Increment currentSize </div></br>
+              Initialize temp to muNumbers element at index 3 [1.8] </br>
+              Set myNumbers element at index 3 to value of element from myNumbers at index 5 </br>
+              Set myNumbers element at index 5 with value of temp </br>
+
+
+            </div>
+
+
+            <!-- example 4.11 -->
+            <div class ="card card-body mt-3 col-lg-12">
+            <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong> </br>
+              Initialize originalArray, an array of 2 int elements [1.9] </br>
+              Declare newArrayIncreased, an array of 4 int elements [1.9] </br>
+              For i = 0, to length of originalArray [1.2] </br>
+              <div style="text-indent: 20px">Set newArrayIncreased element at index i element of originalArray at index i </div></br>
+
+
+            </div>
         </div>
     </div>
 
