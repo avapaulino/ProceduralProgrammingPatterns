@@ -52,3 +52,9 @@ ul li div label{
   padding-left: 10px;
 
 }
+
+.scroll-button{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
