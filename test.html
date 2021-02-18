@@ -1,805 +1,759 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>Collapsible sidebar using Bootstrap 4</title>
-
-  <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="./style2.css">
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-  <link rel="stylesheet" href="./style2.css">
-  <link rel="stylesheet" href="./styles.css">
-
-  <!-- Font Awesome JS -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <!-- Sidebar  -->
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <h3>Bootstrap Sidebar</h3>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Procedural Programming Patterns</title>
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="./style2.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="./style2.css">
+      <link rel="stylesheet" href="./styles.css">
+      <!-- Font Awesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+         <div class="sidebar-header">
+            <h3>Filter Examples</h3>
+         </div>
+         <a href="#examples" class="btn btn-secondary btn-lg active" role="button" style="margin-left: 20%; " aria-pressed="true">All Examples</a>
+         
+         <h5 style="text-align: center;padding-top: 10%;">Examples</h5>
+         <ul class="list-unstyled components">
+            <!-- 1.1 Example -->
+            <li class="active">
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-1" value="1-1" name="fl-colour">
+                  <label class="custom-control-label" for="1-1">1.1 Example</label>
+               </div>
+            </li>
+            <!-- 1.2 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-2" value="1-2" name="fl-colour">
+                  <label class="custom-control-label" for="1-2">1.2 Example</label>
+               </div>
+            </li>
+            <!-- 1.3 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-3" value="1-3" name="fl-colour">
+                  <label class="custom-control-label" for="1-3">1.3 Example</label>
+               </div>
+            </li>
+            <!-- 1.4 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-4" value="1-4" name="fl-colour">
+                  <label class="custom-control-label" for="1-4">1.4 Example</label>
+               </div>
+            </li>
+            <!-- 1.5 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-5" value="1-5" name="fl-colour">
+                  <label class="custom-control-label" for="1-5">1.5 Example</label>
+               </div>
+            </li>
+            <!-- 1.6 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-6" value="1-6" name="fl-colour">
+                  <label class="custom-control-label" for="1-6">1.6 Example</label>
+               </div>
+            </li>
+            <!-- 1.7 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-7" value="1-7" name="fl-colour">
+                  <label class="custom-control-label" for="1-7">1.7 Example</label>
+               </div>
+            </li>
+            <!-- 1.8 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-8" value="1-8" name="fl-colour">
+                  <label class="custom-control-label" for="1-8">1.8 Example</label>
+               </div>
+            </li>
+            <!-- 1.9 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="1-9" value="1-9" name="fl-colour">
+                  <label class="custom-control-label" for="1-9">1.9 Example</label>
+               </div>
+            </li>
+            <!-- 2.1 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="2-1" value="2-1" name="fl-colour">
+                  <label class="custom-control-label" for="2-1">2.1 Example</label>
+               </div>
+            </li>
+            <!-- 3.1 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-1" value="3-1" name="fl-colour">
+                  <label class="custom-control-label" for="3-1">3.1 Example</label>
+               </div>
+            </li>
+            <!-- 3.2 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-2" value="3-2" name="fl-colour">
+                  <label class="custom-control-label" for="3-2">3.2 Example</label>
+               </div>
+            </li>
+            <!-- 3.3 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-3" value="3-3" name="fl-colour">
+                  <label class="custom-control-label" for="3-3">3.3 Example</label>
+               </div>
+            </li>
+            <!-- 3.4 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-4" value="3-4" name="fl-colour">
+                  <label class="custom-control-label" for="3-4">3.4 Example</label>
+               </div>
+            </li>
+            <!-- 3.5 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-5" value="3-5" name="fl-colour">
+                  <label class="custom-control-label" for="3-5">3.5 Example</label>
+               </div>
+            </li>
+            <!-- 3.6 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-6" value="3-6" name="fl-colour">
+                  <label class="custom-control-label" for="3-6">3.6 Example</label>
+               </div>
+            </li>
+            <!-- 3.7 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="3-7" value="3-7" name="fl-colour">
+                  <label class="custom-control-label" for="3-7">3.7 Example</label>
+               </div>
+            </li>
+            <!-- 4.1 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-1" value="4-1" name="fl-colour">
+                  <label class="custom-control-label" for="4-1">4.1 Example</label>
+               </div>
+            </li>
+            <!-- 4.2 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-2" value="4-2" name="fl-colour">
+                  <label class="custom-control-label" for="4-2">4.2 Example</label>
+               </div>
+            </li>
+            <!-- 4.3 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-3" value="4-3" name="fl-colour">
+                  <label class="custom-control-label" for="4-3">4.3 Example</label>
+               </div>
+            </li>
+            <!-- 4.4 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-4" value="4-4" name="fl-colour">
+                  <label class="custom-control-label" for="4-4">4.4 Example</label>
+               </div>
+            </li>
+            <!-- 4.5 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-5" value="4-5" name="fl-colour">
+                  <label class="custom-control-label" for="4-5">4.5 Example</label>
+               </div>
+            </li>
+            <!-- 4.6 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-6" value="4-6" name="fl-colour">
+                  <label class="custom-control-label" for="4-6">4.6 Example</label>
+               </div>
+            </li>
+            <!-- 4.7 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-7" value="4-7" name="fl-colour">
+                  <label class="custom-control-label" for="4-7">4.7 Example</label>
+               </div>
+            </li>
+            <!-- 4.8 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-8" value="4-8" name="fl-colour">
+                  <label class="custom-control-label" for="4-8">4.8 Example</label>
+               </div>
+            </li>
+            <!-- 4.9 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-9" value="4-9" name="fl-colour">
+                  <label class="custom-control-label" for="4-9">4.9 Example</label>
+               </div>
+            </li>
+            <!-- 4.10 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-10" value="4-10" name="fl-colour">
+                  <label class="custom-control-label" for="4-10">4.10 Example</label>
+               </div>
+            </li>
+            <!-- 4.11 Example -->
+            <li>
+               <div class="custom-control custom-checkbox checkbox-lg">
+                  <input type="checkbox" class="custom-control-input" id="4-11" value="4-11" name="fl-colour">
+                  <label class="custom-control-label" for="4-11">4.11 Example</label>
+               </div>
+            </li>
+         </ul>
+      </nav>
       </div>
-      <a href="#examples" class="btn btn-secondary btn-lg active" role="button" style="margin-left: 20%;" aria-pressed="true">All Examples</a>
-
-      <ul class="list-unstyled components">
-        <p class="text-center">Dummy Heading</p>
-        <!-- 1.1 Example -->
-        <li class="active">
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-1" value="1-1" name="fl-colour">
-            <label class="custom-control-label" for="1-1">1.1 Example</label>
-          </div>
-        </li>
-        <!-- 1.2 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-2" value="1-2" name="fl-colour">
-            <label class="custom-control-label" for="1-2">1.2 Example</label>
-          </div>
-        </li>
-        <!-- 1.3 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-3" value="1-3" name="fl-colour">
-            <label class="custom-control-label" for="1-3">1.3 Example</label>
-          </div>
-        </li>
-        <!-- 1.4 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-4" value="1-4" name="fl-colour">
-            <label class="custom-control-label" for="1-4">1.4 Example</label>
-          </div>
-        </li>
-        <!-- 1.5 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-5" value="1-5" name="fl-colour">
-            <label class="custom-control-label" for="1-5">1.5 Example</label>
-          </div>
-        </li>
-        <!-- 1.6 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-6" value="1-6" name="fl-colour">
-            <label class="custom-control-label" for="1-6">1.6 Example</label>
-          </div>
-        </li>
-        <!-- 1.7 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-7" value="1-7" name="fl-colour">
-            <label class="custom-control-label" for="1-7">1.7 Example</label>
-          </div>
-        </li>
-        <!-- 1.8 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-8" value="1-8" name="fl-colour">
-            <label class="custom-control-label" for="1-8">1.8 Example</label>
-          </div>
-        </li>
-        <!-- 1.9 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="1-9" value="1-9" name="fl-colour">
-            <label class="custom-control-label" for="1-9">1.9 Example</label>
-          </div>
-        </li>
-        <!-- 2.1 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="2-1" value="2-1" name="fl-colour">
-            <label class="custom-control-label" for="2-1">2.1 Example</label>
-          </div>
-        </li>
-        <!-- 3.1 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-1" value="3-1" name="fl-colour">
-            <label class="custom-control-label" for="3-1">3.1 Example</label>
-          </div>
-        </li>
-        <!-- 3.2 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-2" value="3-2" name="fl-colour">
-            <label class="custom-control-label" for="3-2">3.2 Example</label>
-          </div>
-        </li>
-        <!-- 3.3 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-3" value="3-3" name="fl-colour">
-            <label class="custom-control-label" for="3-3">3.3 Example</label>
-          </div>
-        </li>
-        <!-- 3.4 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-4" value="3-4" name="fl-colour">
-            <label class="custom-control-label" for="3-4">3.4 Example</label>
-          </div>
-        </li>
-        <!-- 3.5 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-5" value="3-5" name="fl-colour">
-            <label class="custom-control-label" for="3-5">3.5 Example</label>
-          </div>
-        </li>
-        <!-- 3.6 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-6" value="3-6" name="fl-colour">
-            <label class="custom-control-label" for="3-6">3.6 Example</label>
-          </div>
-        </li>
-        <!-- 3.7 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="3-7" value="3-7" name="fl-colour">
-            <label class="custom-control-label" for="3-7">3.7 Example</label>
-          </div>
-        </li>
-        <!-- 4.1 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-1" value="4-1" name="fl-colour">
-            <label class="custom-control-label" for="4-1">4.1 Example</label>
-          </div>
-        </li>
-        <!-- 4.2 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-2" value="4-2" name="fl-colour">
-            <label class="custom-control-label" for="4-2">4.2 Example</label>
-          </div>
-        </li>
-        <!-- 4.3 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-3" value="4-3" name="fl-colour">
-            <label class="custom-control-label" for="4-3">4.3 Example</label>
-          </div>
-        </li>
-        <!-- 4.4 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-4" value="4-4" name="fl-colour">
-            <label class="custom-control-label" for="4-4">4.4 Example</label>
-          </div>
-        </li>
-        <!-- 4.5 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-5" value="4-5" name="fl-colour">
-            <label class="custom-control-label" for="4-5">4.5 Example</label>
-          </div>
-        </li>
-        <!-- 4.6 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-6" value="4-6" name="fl-colour">
-            <label class="custom-control-label" for="4-6">4.6 Example</label>
-          </div>
-        </li>
-        <!-- 4.7 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-7" value="4-7" name="fl-colour">
-            <label class="custom-control-label" for="4-7">4.7 Example</label>
-          </div>
-        </li>
-        <!-- 4.8 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-8" value="4-8" name="fl-colour">
-            <label class="custom-control-label" for="4-8">4.8 Example</label>
-          </div>
-        </li>
-        <!-- 4.9 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-9" value="4-9" name="fl-colour">
-            <label class="custom-control-label" for="4-9">4.9 Example</label>
-          </div>
-        </li>
-        <!-- 4.10 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-10" value="4-10" name="fl-colour">
-            <label class="custom-control-label" for="4-10">4.10 Example</label>
-          </div>
-        </li>
-        <!-- 4.11 Example -->
-        <li>
-          <div class="custom-control custom-checkbox checkbox-lg">
-            <input type="checkbox" class="custom-control-input" id="4-11" value="4-11" name="fl-colour">
-            <label class="custom-control-label" for="4-11">4.11 Example</label>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Page Content  -->
-    <div id="content">
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-            <span>Toggle Sidebar</span>
-          </button>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
+          <i class="fas fa-align-left"></i>
+          <span>Filter Examples</span>
           </button>
         </nav>
         <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <a class="btn btn-primary" href="#examples" role="button">Examples</a>
+          <h1 class="mt-5">Procedural Programming Patterns</h1>
+          <a class="btn btn-primary" href="#examples" role="button">Go to Examples</a>
         </div>
         <!-- Table 1: Planning for Writing Expressions -->
         <h6 class="mt-5">Table 1. Planning for Writing Expressions</h6>
         <table class="table table-bordered">
           <thead>
-            <tr>
-              <th scope="col">Common Variable Goals</th>
-              <th scope="col">Definition</th>
-              <th scope="col">Example</th>
-            </tr>
+              <tr>
+                <th scope="col">Common Variable Goals</th>
+                <th scope="col">Definition</th>
+                <th scope="col">Example</th>
+              </tr>
           </thead>
           <tbody>
-            <tr id="1.1">
-              <th scope="row">Fixed value</th>
-              <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
-              <td>1.1</td>
-            </tr>
-            <tr id="1.2">
-              <th scope="row">Stepper</th>
-              <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
-              <td>1.2</td>
-            </tr>
-            <tr id="1.3">
-              <th scope="row">Most-recent holder</th>
-              <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
-              <td>1.3</td>
-            </tr>
-            <tr id="1.4">
-              <th scope="row">Most-wanted holder</th>
-              <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
-              <td>1.4</td>
-            </tr>
-            <tr id="1.5">
-              <th scope="row">Gatherer</th>
-              <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
-              <td>1.5</td>
-            </tr>
-            <tr id="1.6">
-              <th scope="row">Follwer</th>
-              <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
-              <td>1.6</td>
-            </tr>
-            <tr id="1.7">
-              <th scope="row">One-way flag</th>
-              <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
-              <td>1.7</td>
-            </tr>
-            <tr id="1.8">
-              <th scope="row">Temporary</th>
-              <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
-              <td>1.8</td>
-            </tr>
-            <tr id="1.9">
-              <th scope="row">Organizer</th>
-              <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
-              <td>1.9</td>
-            </tr>
-            <tr>
-              <th scope="row" colspan="3">
-                <p>Subgoals for writing expressions</p>
-                <p style="font-weight:normal">
-                  1. Determine expression that will yield variable <br>
-                  2. Determine data type and name of variable and data type of expression<br>
-                  3. Determine arithmetic equation with operators<br>
-                  4. Determine expression components<br>
-                  5. Operators and operands must be compatible<br>
-                </p>
-                <br>
-                <p>Subgoals for writing arrays</p>
-                <p style="font-weight:normal">
-                  1. Data type plus []<br>
-                  2. Variable name = {initializer list}, or new data type [size]
-                </p>
-              </th>
-            </tr>
+              <tr id="1.1">
+                <th scope="row">Fixed value</th>
+                <td>The role of a variable or an attribute is a fixed value, if its value is not changed after intialization.<br><br>// Store a fixed value</td>
+                <td>1.1</td>
+              </tr>
+              <tr id="1.2">
+                <th scope="row">Stepper</th>
+                <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____</td>
+                <td>1.2</td>
+              </tr>
+              <tr id="1.3">
+                <th scope="row">Most-recent holder</th>
+                <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+                <td>1.3</td>
+              </tr>
+              <tr id="1.4">
+                <th scope="row">Most-wanted holder</th>
+                <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest input value<br><br>// Store the most-recent input</td>
+                <td>1.4</td>
+              </tr>
+              <tr id="1.5">
+                <th scope="row">Gatherer</th>
+                <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
+                <td>1.5</td>
+              </tr>
+              <tr id="1.6">
+                <th scope="row">Follwer</th>
+                <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>// Store the old value</td>
+                <td>1.6</td>
+              </tr>
+              <tr id="1.7">
+                <th scope="row">One-way flag</th>
+                <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the program could ask the inputs again.<br><br>// Store a boolean flag</td>
+                <td>1.7</td>
+              </tr>
+              <tr id="1.8">
+                <th scope="row">Temporary</th>
+                <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to clarify the program (e.g., computing the result in a variable even though the use of a variable would not be absolutely necessary). A temporary is also often used for swapping two data elements of an organizer.<br><br>// Store a temporary value</td>
+                <td>1.8</td>
+              </tr>
+              <tr id="1.9">
+                <th scope="row">Organizer</th>
+                <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values</td>
+                <td>1.9</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="3">
+                    <p>Subgoals for writing expressions</p>
+                    <p style="font-weight:normal">
+                      1. Determine expression that will yield variable <br>
+                      2. Determine data type and name of variable and data type of expression<br>
+                      3. Determine arithmetic equation with operators<br>
+                      4. Determine expression components<br>
+                      5. Operators and operands must be compatible<br>
+                    </p>
+                    <br>
+                    <p>Subgoals for writing arrays</p>
+                    <p style="font-weight:normal">
+                      1. Data type plus []<br>
+                      2. Variable name = {initializer list}, or new data type [size]
+                    </p>
+                </th>
+              </tr>
           </tbody>
         </table>
-
-      </br>
-
-      <!-- Table 2: Planning for Writing Selection Statements -->
-      <h6 class="mt-5">Table 2. Planning for Writing Selection Statements</h6>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Common selection algorithm</th>
-            <th scope="col">Definition</th>
-            <th scope="col">Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Input validation</th>
-            <td>Ensure that the next input is a specific data type</td>
-            <td>2.1</td>
-          </tr>
-          <tr>
-            <th scope="row" colspan="3">
-              <p>Subgoals for selection statements</p>
-              <p style="font-weight:normal">
-                1. Determine how many exclusive paths are needed<br>
-                2. Order from most restrictive/selective group to least restrictive<br>
-                3. Write if statement with Boolean expression<br>
-                4. Follow with true bracket including action <br>
-                5. Follow with else bracket<br>
-                6. Repeat until all groups and actions are accounted for<br>
-              </p>
-              <br>
-              <p>Subgoals for writing arrays</p>
-              <p style="font-weight:normal">
-                1. Data type plus []<br>
-                2. Variable name = {initializer list}, or new data type [size]
-              </p>
-            </th>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- Table 3. Planning for writing loop algorithms -->
-      <h6 class="mt-5">Table 3. Planning for writing loop algorithms</h6>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Common loop algorithm</th>
-            <th scope="col">Definition</th>
-            <th scope="col">Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Processing a sentinel</th>
-            <td>A sentinel value denotes the end of a data set, but it is not part of the data.</td>
-            <td>3.1</td>
-          </tr>
-          <tr>
-            <th scope="row">Sum and average value</th>
-            <td>To compute an average, keep a total and a count of all values</td>
-            <td>3.2</td>
-          </tr>
-          <tr>
-            <th scope="row">Counting matches</th>
-            <td>To count values that fulfill a condition, check all values and increment a counter for each match.</td>
-            <td>3.3</td>
-          </tr>
-          <tr>
-            <th scope="row">Finding the first match</th>
-            <td >If your goal is to find a match, exit the loop when the match is found.</td>
-            <td>3.4</td>
-          </tr>
-          <tr>
-            <th scope="row">Prompting until a match is found</th>
-            <td >Keep asking the user to provide a correct input</td>
-            <td>3.5</td>
-          </tr>
-          <tr>
-            <th scope="row">Maximum and minimum</th>
-            <td >To find the largest value, update the largest value seen so far whenever you see a larger one</td>
-            <td>3.6</td>
-          </tr>
-          <tr>
-            <th scope="row">Comparing adjacent values</th>
-            <td >To compare adjacent inputs, store the preceding input in a variable</td>
-            <td>3.7</td>
-          </tr>
-          <tr>
-            <th scope="row" colspan="3">
-              <p>  Subgoals for writing loops </p>
-              <div style="font-weight: normal">
-                1. Determine purpose of loop </br>
-                <p class="single">a. Pick a loop structure (while, for, do_while)</p>
-                2. Define and initialize variables </br>
-                3. Determine termination condition </br>
-                <p class="single">a. Invert termination condition to continuation condition </p>
-                4. Write loop body </br>
-                <p class="single">a. Update loop control variable to reach termination </p>
-              </div>
-            </th>
-
-          </tr>
-        </tbody>
-      </table>
-
-
-    </br>
-
-
-    <!-- Table 4: Planning for writing array algorithm -->
-    <h6 class="mt-5">Table 4. Planning for writing array algorithms</h6>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">Common array algorithm</th>
-          <th scope="col">Definition</th>
-          <th scope="col">Example</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Filling</th>
-          <td>A loop fills an array with some values.</td>
-          <td>4.1</td>
-        </tr>
-        <tr>
-          <th scope="row">Sum and average value</th>
-          <td>To compute an average, keep a total and a count of all values.</td>
-          <td>4.2</td>
-        </tr>
-        <tr>
-          <th scope="row">Maximum and minimum</th>
-          <td >To find the largest value, update the largest value seen so far whenever you see a larger one.</td>
-          <td>4.3</td>
-        </tr>
-        <tr>
-          <th scope="row">Element separators</th>
-          <td >To display the elements of an array, you usually want to separate them, often with commas or vertical lines.</td>
-          <td>4.4</td>
-        </tr>
-        <tr>
-          <th scope="row">Linear search</th>
-          <td >A linear search inspects elements in sequence until a match is found.</td>
-          <td>4.5</td>
-        </tr>
-        <tr>
-          <th scope="row">Removing and element</th>
-          <td >Remove an element at a given index position from the array values.</td>
-          <td>4.6</td>
-        </tr>
-        <tr>
-          <th scope="row">Inserting an element</th>
-          <td >Use a temporary variable when swapping two elements.</td>
-          <td>4.7</td>
-        </tr>
-        <tr>
-          <th scope="row">Swapping elements</th>
-          <td >Insert an element into an array by moving elements to the end of the array starting with the last one.</td>
-          <td>4.8</td>
-        </tr>
-        <tr>
-          <th scope="row">Copying arrays</th>
-          <td >Use the Arrays.copyOf method to copy the elements of an array into a new array.</td>
-          <td>4.9</td>
-        </tr>
-        <tr>
-          <th scope="row">Reading input</th>
-          <td >Add the inputs to an array until the end of the input has been reached.</td>
-          <td>4.10</td>
-        </tr>
-        <tr>
-          <th scope="row">Growing arrays</th>
-          <td >Grow an array to hold all inputs.</td>
-          <td>4.11</td>
-        </tr>
-        <tr>
-          <th scope="row" colspan="3">
-            <p>  Subgoals for writing loops </p>
-            <div style="font-weight:normal">
-              1. Determine purpose of loop </br>
-              <p class="single">a. Pick a loop structure (while, for, do_while) </p>
-              2. Define and initialize variables </br>
-              3. Determine termination condition </br>
-              <p class="single">a. Invert termination condition to continuation condition </p>
-              4. Write loop body </br>
-              <p class="single">a. Update loop control variable to reach termination </p>
-            </div>
-          </th>
-
-        </tr>
-      </tbody>
-    </table>
-
-
-  </br>
-
-
-  <!-- Table 5. Planning for writing methods and classes -->
-  <h6 class="mt-5">Table 5. Planning for writing methods and classes</h6>
-  <table class="table table-bordered">
-    <tbody>
-      <tr>
-        <td scope="row">
-          <p><strong>  Subgoals for writing methods </strong></p>
-          1. Define method header based on problem </br>
-          2. Define return statement at the end </br>
-          3. Define method body/logic </br>
-          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
-          <p class="single">b. Define internal variables </p>
-          <p class="single">c. Write statements </p>
-        </td>
-      </tr>
-      <tr>
-        <td scope="row">
-          <p><strong>  Subgoals for writing methods </strong></p>
-          1. Define method header based on problem </br>
-          2. Define return statement at the end </br>
-          3. Define method body/logic </br>
-          <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
-          <p class="single">b. Define internal variables </p>
-          <p class="single">c. Write statements </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-</br>
-<div class="col-lg-12 text-center"  id="examples">
-  <h1 class="mt-5">Pseudocode examples</h1>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="results">
-    <!--Example 3.1-->
-    <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-1" data-category="1-1 1-2">
-      <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
-      <p>Initialize SENTINEL_VALUE to "-1", theLetter <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a>, word to input <a href="#1.3">[1.3]</a></p>
-      While word is not equal to SENTINEL VALUE<br>
-      <p class="single">If first character of word is equal to the letter</p>
-      <p class="double">Increment count</p>
-      <p class="single">Set word to input</p>
-      Print count
-    </div>
-
-    <!--Example 3.2-->
-    <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-2" data-category="1-5 1-3">
-      <strong>Loop Algorithm - Sum and Average [3.2]</strong>
-      <p>Initialize sum to 0 <a href="#1.5">[1.5]</a>, quantity to 0 <a href="#1.5">[1.5]</a>, number to input <a href="#1.3">[1.3]</a></p>
-      While number is greater to equal to 0<br>
-      <p class="single">Set sum to addition of sum and number</p>
-      <p class="single">Increment quantity</p>
-      <p class="single">Set number to input</p>
-      Print sum divided by quantity
-    </div>
-
-    <!--Example 3.3-->
-    <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-3" data-category="1-1 1-2 1-3 1-5">
-      <strong>Loop Algorithm - Counting Matches [3.3]</strong>
-      <p>Initialize word to input <a href="#1.3">[1.3]</a>, LETTER to 'c' <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a></p>
-      <p>For each character in word <a href="#1.2">[1.2]</a></p>
-      <p class="single">If character in word matches LETTER</p>
-      <p class="double">Increment count</p>
-      Print count
-    </div>
-
-    <!--Example 3.4-->
-    <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-4" data-category="1-2">
-      <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
-      <p>For each character in word starting from the last <a href="#1.2">[1.2]</a><br>
-        <p class="single">If character in word matches LETTER and is Found is equal to false</p>
-        <p class="double">Print index of the matching character</p>
-        <p class="double">Set isFound to true</p>
-      </div>
-
-      <!--Example 3.6-->
-      <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-6" data-category="1-3 1-4">
-        <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
-        <p>Initialize number to input <a href="#1.3">[1.3]</a>, min <a href="#1.4">[1.4]</a>, max <a href="#1.4">[1.4]</a></p>
-        While number is greater than max<br>
-        <p class="single">If number is greater than max</p>
-        <p class="double">Set max to number</p>
-        <p class="single">If number is less than min<p>
-          <p class="double">Set min to number</p>
-          <p class="single">Set number to input</p>
-          Print max and min
+        <br>
+        <!-- Table 2: Planning for Writing Selection Statements -->
+        <h6 class="mt-5">Table 2. Planning for Writing Selection Statements</h6>
+        <table class="table table-bordered">
+          <thead>
+              <tr>
+                <th scope="col">Common selection algorithm</th>
+                <th scope="col">Definition</th>
+                <th scope="col">Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr id="2.1">
+                <th scope="row">Input validation</th>
+                <td>Ensure that the next input is a specific data type</td>
+                <td>2.1</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="3">
+                    <p>Subgoals for selection statements</p>
+                    <p style="font-weight:normal">
+                      1. Determine how many exclusive paths are needed<br>
+                      2. Order from most restrictive/selective group to least restrictive<br>
+                      3. Write if statement with Boolean expression<br>
+                      4. Follow with true bracket including action <br>
+                      5. Follow with else bracket<br>
+                      6. Repeat until all groups and actions are accounted for<br>
+                    </p>
+                    <br>
+                    <p>Subgoals for writing arrays</p>
+                    <p style="font-weight:normal">
+                      1. Data type plus []<br>
+                      2. Variable name = {initializer list}, or new data type [size]
+                    </p>
+                </th>
+              </tr>
+          </tbody>
+        </table>
+        <!-- Table 3. Planning for writing loop algorithms -->
+        <h6 class="mt-5">Table 3. Planning for writing loop algorithms</h6>
+        <table class="table table-bordered">
+          <thead>
+              <tr>
+                <th scope="col">Common loop algorithm</th>
+                <th scope="col">Definition</th>
+                <th scope="col">Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr id="3.1">
+                <th scope="row">Processing a sentinel</th>
+                <td>A sentinel value denotes the end of a data set, but it is not part of the data.</td>
+                <td>3.1</td>
+              </tr>
+              <tr id="3.2">
+                <th scope="row">Sum and average value</th>
+                <td>To compute an average, keep a total and a count of all values</td>
+                <td>3.2</td>
+              </tr>
+              <tr id="3.3">
+                <th scope="row">Counting matches</th>
+                <td>To count values that fulfill a condition, check all values and increment a counter for each match.</td>
+                <td>3.3</td>
+              </tr>
+              <tr id="3.4">
+                <th scope="row">Finding the first match</th>
+                <td >If your goal is to find a match, exit the loop when the match is found.</td>
+                <td>3.4</td>
+              </tr>
+              <tr id="3.5">
+                <th scope="row">Prompting until a match is found</th>
+                <td >Keep asking the user to provide a correct input</td>
+                <td>3.5</td>
+              </tr>
+              <tr id="3.6">
+                <th scope="row">Maximum and minimum</th>
+                <td >To find the largest value, update the largest value seen so far whenever you see a larger one</td>
+                <td>3.6</td>
+              </tr>
+              <tr id="3.7">
+                <th scope="row">Comparing adjacent values</th>
+                <td >To compare adjacent inputs, store the preceding input in a variable</td>
+                <td>3.7</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="3">
+                    <p>  Subgoals for writing loops </p>
+                    <div style="font-weight: normal">
+                      1. Determine purpose of loop <br>
+                      <p class="single">a. Pick a loop structure (while, for, do_while)</p>
+                      2. Define and initialize variables <br>
+                      3. Determine termination condition <br>
+                      <p class="single">a. Invert termination condition to continuation condition </p>
+                      4. Write loop body <br>
+                      <p class="single">a. Update loop control variable to reach termination </p>
+                    </div>
+                </th>
+              </tr>
+          </tbody>
+        </table>
+        <br>
+        <!-- Table 4: Planning for writing array algorithm -->
+        <h6 class="mt-5">Table 4. Planning for writing array algorithms</h6>
+        <table class="table table-bordered">
+          <thead>
+              <tr>
+                <th scope="col">Common array algorithm</th>
+                <th scope="col">Definition</th>
+                <th scope="col">Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr id="4.1">
+                <th scope="row">Filling</th>
+                <td>A loop fills an array with some values.</td>
+                <td>4.1</td>
+              </tr>
+              <tr id="4.2">
+                <th scope="row">Sum and average value</th>
+                <td>To compute an average, keep a total and a count of all values.</td>
+                <td>4.2</td>
+              </tr>
+              <tr id="4.3">
+                <th scope="row">Maximum and minimum</th>
+                <td >To find the largest value, update the largest value seen so far whenever you see a larger one.</td>
+                <td>4.3</td>
+              </tr>
+              <tr id="4.4">
+                <th scope="row">Element separators</th>
+                <td >To display the elements of an array, you usually want to separate them, often with commas or vertical lines.</td>
+                <td>4.4</td>
+              </tr>
+              <tr id="4.5">
+                <th scope="row">Linear search</th>
+                <td >A linear search inspects elements in sequence until a match is found.</td>
+                <td>4.5</td>
+              </tr>
+              <tr id="4.6">
+                <th scope="row">Removing and element</th>
+                <td >Remove an element at a given index position from the array values.</td>
+                <td>4.6</td>
+              </tr>
+              <tr id="4.7">
+                <th scope="row">Inserting an element</th>
+                <td >Use a temporary variable when swapping two elements.</td>
+                <td>4.7</td>
+              </tr>
+              <tr id="4.8">
+                <th scope="row">Swapping elements</th>
+                <td >Insert an element into an array by moving elements to the end of the array starting with the last one.</td>
+                <td>4.8</td>
+              </tr>
+              <tr id="4.9">
+                <th scope="row">Copying arrays</th>
+                <td >Use the Arrays.copyOf method to copy the elements of an array into a new array.</td>
+                <td>4.9</td>
+              </tr>
+              <tr id="4.10">
+                <th scope="row">Reading input</th>
+                <td >Add the inputs to an array until the end of the input has been reached.</td>
+                <td>4.10</td>
+              </tr>
+              <tr id="4.11">
+                <th scope="row">Growing arrays</th>
+                <td >Grow an array to hold all inputs.</td>
+                <td>4.11</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="3">
+                    <p>  Subgoals for writing loops </p>
+                    <div style="font-weight:normal">
+                      1. Determine purpose of loop <br>
+                      <p class="single">a. Pick a loop structure (while, for, do_while) </p>
+                      2. Define and initialize variables <br>
+                      3. Determine termination condition <br>
+                      <p class="single">a. Invert termination condition to continuation condition </p>
+                      4. Write loop body <br>
+                      <p class="single">a. Update loop control variable to reach termination </p>
+                    </div>
+                </th>
+              </tr>
+          </tbody>
+        </table>
+        <br>
+        <!-- Table 5. Planning for writing methods and classes -->
+        <h6 class="mt-5">Table 5. Planning for writing methods and classes</h6>
+        <table class="table table-bordered">
+          <tbody>
+              <tr>
+                <td>
+                    <p><strong>  Subgoals for writing methods </strong></p>
+                    1. Define method header based on problem <br>
+                    2. Define return statement at the end <br>
+                    3. Define method body/logic <br>
+                    <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+                    <p class="single">b. Define internal variables </p>
+                    <p class="single">c. Write statements </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <p><strong>  Subgoals for writing methods </strong></p>
+                    1. Define method header based on problem <br>
+                    2. Define return statement at the end <br>
+                    3. Define method body/logic <br>
+                    <p class="single">a. Determine types of logic (expression, selection, loop, etc.) </p>
+                    <p class="single">b. Define internal variables </p>
+                    <p class="single">c. Write statements </p>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+        <br>
+        <div class="col-lg-12 text-center"  id="examples">
+          <h1 class="mt-5">Pseudocode examples</h1>
         </div>
-
-        <!--Example 3.7-->
-        <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-7" data-category="1-3 1-5 1-6">
-          // Concatenate unique numbers only<br>
-          <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
-          <p>Initialize number to input <a href="#1.3">[1.3]</a>, allNumbers to concatenation of "" and number <a href="#1.5">[1.5]</a></p>
-          While number is greater than 0<br>
-          <p class="single">Initialize previous to number <a href="#1.6">[1.6]</a></p>
-          <p class="single">Set number to input</p>
-          <p class="single">If number is equal to previous</p>
-          <p class="double">Print "No duplicated allowed" and skip line</p>
-          <p class="single">Else if number is not equal to 0</p>
-          <p class="double">Set allNumbers to concatenation of allNumbers and number</p>
-          Print allNumbers and skip line
-        </div>
-
-        <!-- example 4.1 -->
-        <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-1" data-category="1-9 1-2">
-          <strong>  Array Algorithm – Filling [4.1] </strong>
-          <p>Declare myArray, an array of 5 int elements <a href="#1.9">[1.9]</a><br>
-            For i = 0 to length of myArray <a href="#1.2">[1.2]</a> </p>
-            <p class="single">  Set myArray at index to i to the addition of i and 4 </p>
-          </div>
-
-          <!-- example 4.2 -->
-          <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-2" data-category="1-9 1-5 1-2">
-            <strong>   Array Algorithm – Sum and Average [4.2] </strong>
-            <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, sum to 0 <a href="#1.5">[1.5]</a> </br>
-              For each number of numbers <a href="#1.2">[1.2]</a> </p>
-              <p class="single">Set sum to the addition of sum and number </p>
-              Print the sum and average values </br>
-            </div>
-
-            <!-- example 4.3 -->
-            <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-3" data-category="1-9 1-4 1-2">
-              <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong>
-              <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, min to numbers element at index 0 <a href="1.4">[1.4]</a>, max to numbers element at index 0 <a href="#1.4">[1.4]</a><br>
-                For i = 0 to length of numbers <a href="#1.2">[1.2]</a></p>
-                <p class="single">If numbers element at index i is greater than max</p>
-                <p class="double">Set max to numbers element at index i </p>
-                <p class="single">If numbers element at index i is lesser than min</p>
-                <p class="double">Set min to numbers element at index i</p>
-                Print the min and max values </br>
-              </div>
-
-              <!-- example 4.4 -->
-              <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-4" data-category="1-9 1-2">
-                <strong>   Array Algorithm – Element Separators [4.4] </strong>
-                <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a> </br>
-                  For i = 0 to length of numbers <a href="#1.2">[1.2]</a> </p>
-                  <p class="single">If index is not equal to 0</p>
-                  <p class="double">Print the separator |</p>
-                  <p class="single">Print numbers element at index i</p>
-                  Print skip line </br>
+        <div class="container">
+          <div class="row">
+              <div class="results">
+                <!--Example 3.1-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-1" data-category="1-1 1-2">
+                    <strong>Loop Algorithm - Processing Sentinel [3.1]</strong>
+                    <p>Initialize SENTINEL_VALUE to "-1", theLetter <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a>, word to input <a href="#1.3">[1.3]</a></p>
+                    While word is not equal to SENTINEL VALUE<br>
+                    <p class="single">If first character of word is equal to the letter</p>
+                    <p class="double">Increment count</p>
+                    <p class="single">Set word to input</p>
+                    Print count
                 </div>
-
-
+                <!--Example 3.2-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-2" data-category="1-5 1-3">
+                    <strong>Loop Algorithm - Sum and Average [3.2]</strong>
+                    <p>Initialize sum to 0 <a href="#1.5">[1.5]</a>, quantity to 0 <a href="#1.5">[1.5]</a>, number to input <a href="#1.3">[1.3]</a></p>
+                    While number is greater to equal to 0<br>
+                    <p class="single">Set sum to addition of sum and number</p>
+                    <p class="single">Increment quantity</p>
+                    <p class="single">Set number to input</p>
+                    Print sum divided by quantity
+                </div>
+                <!--Example 3.3-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-3" data-category="1-1 1-2 1-3 1-5">
+                    <strong>Loop Algorithm - Counting Matches [3.3]</strong>
+                    <p>Initialize word to input <a href="#1.3">[1.3]</a>, LETTER to 'c' <a href="#1.1">[1.1]</a>, count to 0 <a href="#1.5">[1.5]</a></p>
+                    <p>For each character in word <a href="#1.2">[1.2]</a></p>
+                    <p class="single">If character in word matches LETTER</p>
+                    <p class="double">Increment count</p>
+                    Print count
+                </div>
+                <!--Example 3.4-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-4" data-category="1-2">
+                    <strong>Loop Algorithm - Find First Last Match [3.4]</strong>
+                    <p>For each character in word starting from the last <a href="#1.2">[1.2]</a><br>
+                    <p class="single">If character in word matches LETTER and is Found is equal to false</p>
+                    <p class="double">Print index of the matching character</p>
+                    <p class="double">Set isFound to true</p>
+                </div>
+                <!--Example 3.6-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-6" data-category="1-3 1-4">
+                    <strong>Loop Algorithm - Maximum and Minimum [3.6]</strong>
+                    <p>Initialize number to input <a href="#1.3">[1.3]</a>, min <a href="#1.4">[1.4]</a>, max <a href="#1.4">[1.4]</a></p>
+                    While number is greater than max<br>
+                    <p class="single">If number is greater than max</p>
+                    <p class="double">Set max to number</p>
+                    <p class="single">If number is less than min
+                    <p>
+                    <p class="double">Set min to number</p>
+                    <p class="single">Set number to input</p>
+                    Print max and min
+                </div>
+                <!--Example 3.7-->
+                <div class="result card card-body mt-3 col-lg-12" data-id="Example-3-7" data-category="1-3 1-5 1-6">
+                    // Concatenate unique numbers only<br>
+                    <strong>Loop Algorithm - Compare Adjacent Values [3.7]</strong>
+                    <p>Initialize number to input <a href="#1.3">[1.3]</a>, allNumbers to concatenation of "" and number <a href="#1.5">[1.5]</a></p>
+                    While number is greater than 0<br>
+                    <p class="single">Initialize previous to number <a href="#1.6">[1.6]</a></p>
+                    <p class="single">Set number to input</p>
+                    <p class="single">If number is equal to previous</p>
+                    <p class="double">Print "No duplicated allowed" and skip line</p>
+                    <p class="single">Else if number is not equal to 0</p>
+                    <p class="double">Set allNumbers to concatenation of allNumbers and number</p>
+                    Print allNumbers and skip line
+                </div>
+                <!-- example 4.1 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-1" data-category="1-9 1-2">
+                    <strong>  Array Algorithm – Filling [4.1] </strong>
+                    <p>Declare myArray, an array of 5 int elements <a href="#1.9">[1.9]</a><br>
+                      For i = 0 to length of myArray <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">  Set myArray at index to i to the addition of i and 4 </p>
+                </div>
+                <!-- example 4.2 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-2" data-category="1-9 1-5 1-2">
+                    <strong>   Array Algorithm – Sum and Average [4.2] </strong>
+                    <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, sum to 0 <a href="#1.5">[1.5]</a> <br>
+                      For each number of numbers <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">Set sum to the addition of sum and number </p>
+                    Print the sum and average values <br>
+                </div>
+                <!-- example 4.3 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-3" data-category="1-9 1-4 1-2">
+                    <strong>    Array Algorithm – Maximum and Minimum [4.3] </strong>
+                    <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, min to numbers element at index 0 <a href="1.4">[1.4]</a>, max to numbers element at index 0 <a href="#1.4">[1.4]</a><br>
+                      For i = 0 to length of numbers <a href="#1.2">[1.2]</a>
+                    </p>
+                    <p class="single">If numbers element at index i is greater than max</p>
+                    <p class="double">Set max to numbers element at index i </p>
+                    <p class="single">If numbers element at index i is lesser than min</p>
+                    <p class="double">Set min to numbers element at index i</p>
+                    Print the min and max values <br>
+                </div>
+                <!-- example 4.4 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-4" data-category="1-9 1-2">
+                    <strong>   Array Algorithm – Element Separators [4.4] </strong>
+                    <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a> <br>
+                      For i = 0 to length of numbers <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">If index is not equal to 0</p>
+                    <p class="double">Print the separator |</p>
+                    <p class="single">Print numbers element at index i</p>
+                    Print skip line <br>
+                </div>
                 <!-- example 4.5 -->
                 <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-5" data-category="1-9 1-1 1-5 1-7">
-                  <strong>   Array Algorithm – Linear Search [4.5] </strong>
-                  <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, numberToFind to 15 <a href="#1.1">[1.1]</a>, i to 0 <a href="#1.5">[1.5]</a>, isFound to false <a href="#1.7">[1.7]</a> </br>
-                    While i is lesser than length of numbers and isFound is false </p>
+                    <strong>   Array Algorithm – Linear Search [4.5] </strong>
+                    <p>Initialize numbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, numberToFind to 15 <a href="#1.1">[1.1]</a>, i to 0 <a href="#1.5">[1.5]</a>, isFound to false <a href="#1.7">[1.7]</a> <br>
+                      While i is lesser than length of numbers and isFound is false 
+                    </p>
                     <p class="single">If numbers at index i is equal to numberToFind </p>
                     <p class="double">Set isFound to true </p>
                     <p class="single">Increment i </p>
-                    If isFound is true </br>
+                    If isFound is true <br>
                     <p class="single">Print “The position is: ” and the subtraction of i and 1 and skip a line </p>
-                    Else </br>
+                    Else <br>
                     <p class="single">Print “not found!” and skip a line </p>
-                  </div>
-
-
-                  <!-- example 4.6 -->
-                  <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-6" data-category="1-9 1-5 1-2">
+                </div>
+                <!-- example 4.6 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-6" data-category="1-9 1-5 1-2">
                     <strong>   Array Algorithm – Removing Elements [4.6] </strong>
-                    <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
-                      For i = 0 to length – 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
-                      <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
-                      <p class="single">Increment currentSize </p>
-                      Initialize indexToRemove to 2 </br>
-                      <p>For i = indexToRemove to currentSize <a href="#1.2">[1.2]</a> </p>
-                      <p class="single">Set myNumbers element at index i to element of myNumbers at index i  + 1 </p>
-                      Decrement currentSize </br>
-                    </div>
-
-
-                    <!-- example 4.7 -->
-                    <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-7" data-category="1-9 1-5 1-2">
-                      <strong>   Array Algorithm – Inserting Elements [4.7] </strong>
-                      <p>Initialize  myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
-                        For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
-                        <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
-                        <p class="single">Increment currentSize </p>
-                        <p>For i = currentSize to i greater than 4 <a href="#1.2">[1.2]</a> </p>
-                        <p class="single">Set myNumbers element at index i to element of myNumbers at index i  - 1 </p>
-                        Set myNumbers at index 4 to 10 </br>
-                        Increment currentSize </br>
-                      </div>
-
-
-                      <!-- example 4.8 -->
-                      <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-8" data-category="1-9 1-5 1-2 1-8">
-                        <strong>   Array Algorithm – Swapping Elements [4.8] </strong>
-                        <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> </br>
-                          For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> </p>
-                          <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
-                          <p class="single">Increment currentSize </p>
-                          <p>Initialize temp to muNumbers element at index 3 <a href="#1.8">[1.8]</a> </p>
-                          Set myNumbers element at index 3 to value of element from myNumbers at index 5 </br>
-                          Set myNumbers element at index 5 with value of temp </br>
-                        </div>
-
-
-                        <!-- example 4.11 -->
-                        <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-11" data-category="1-9 1-2">
-                          <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong>
-                          <p>Initialize originalArray, an array of 2 int elements <a href="#1.9">[1.9]</a> </br>
-                            Declare newArrayIncreased, an array of 4 int elements <a href="#1.9">[1.9]</a> </br>
-                            For i = 0, to length of originalArray <a href="#1.2">[1.2]</a> </p>
-                            <p class="single">Set newArrayIncreased element at index i element of originalArray at index i </p>
-                          </div>
-                        </div>
-
-                        </div>
-                      </div>
-
-                      <!-- jQuery CDN - Slim version (=without AJAX) -->
-                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                      <!-- Popper.JS -->
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-                      <!-- Bootstrap JS -->
-                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-                      <!-- jQuery Custom Scroller CDN -->
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-                      <script type="text/javascript">
-                      $(document).ready(function () {
-                        $("#sidebar").mCustomScrollbar({
-                          theme: "minimal"
-                        });
-
-                        $('#sidebarCollapse').on('click', function () {
-                          $('#sidebar, #content').toggleClass('active');
-                          $('.collapse.in').toggleClass('in');
-                          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                        });
-                      });
-                      </script>
-
-
-
-                      <script>
-                      $(document).ready(function() {
-                          var $results=$('.result').text(function(){
-                          })
-                          var $checks=$(':checkbox[name^=fl]').change(function(){
-                              var $checked=$checks.filter(':checked');
-                              /* show all when nothing checked*/
-                              if(!$checked.length){
-                                  $results.show();
-                                  return;
-                              }
-                              /* create array of checked values */
-                              var checkedVals= $.map($checked, function(el){
-                                  return el.value
-                              });
-                              /* hide all results, then filter for matches */
-                              $results.hide().filter(function(){
-                                  var cats=$(this).data('category').split(' ');
-                                  var checkMatches=$.grep(checkedVals, function(val){
-                                      return $.inArray(val, cats) >-1;
-                                  });
-                                  return checkMatches.length === checkedVals.length;
-                               /* show resultas that match all checkboxes */
-                              }).show();
-
-
-                          });
-
-                      });
-
-                      </script>
-
-
-                    </body>
-
-                    </html>
+                    <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> <br>
+                      For i = 0 to length – 3 of myNumbers <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                    <p class="single">Increment currentSize </p>
+                    Initialize indexToRemove to 2 <br>
+                    <p>For i = indexToRemove to currentSize <a href="#1.2">[1.2]</a> </p>
+                    <p class="single">Set myNumbers element at index i to element of myNumbers at index i  + 1 </p>
+                    Decrement currentSize <br>
+                </div>
+                <!-- example 4.7 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-7" data-category="1-9 1-5 1-2">
+                    <strong>   Array Algorithm – Inserting Elements [4.7] </strong>
+                    <p>Initialize  myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> <br>
+                      For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                    <p class="single">Increment currentSize </p>
+                    <p>For i = currentSize to i greater than 4 <a href="#1.2">[1.2]</a> </p>
+                    <p class="single">Set myNumbers element at index i to element of myNumbers at index i  - 1 </p>
+                    Set myNumbers at index 4 to 10 <br>
+                    Increment currentSize <br>
+                </div>
+                <!-- example 4.8 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-8" data-category="1-9 1-5 1-2 1-8">
+                    <strong>   Array Algorithm – Swapping Elements [4.8] </strong>
+                    <p>Initialize myNumbers, an array of 10 int elements <a href="#1.9">[1.9]</a>, currentSize to 0 <a href="#1.5">[1.5]</a> <br>
+                      For i = 0 to length - 3 of myNumbers <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">Set myNumbers at index to i to the addition of i and 1 </p>
+                    <p class="single">Increment currentSize </p>
+                    <p>Initialize temp to muNumbers element at index 3 <a href="#1.8">[1.8]</a> </p>
+                    Set myNumbers element at index 3 to value of element from myNumbers at index 5 <br>
+                    Set myNumbers element at index 5 with value of temp <br>
+                </div>
+                <!-- example 4.11 -->
+                <div class ="result card card-body mt-3 col-lg-12" data-id="Example-4-11" data-category="1-9 1-2">
+                    <strong>   Array Algorithm – “Growing” Arrays [4.11] </strong>
+                    <p>Initialize originalArray, an array of 2 int elements <a href="#1.9">[1.9]</a> <br>
+                      Declare newArrayIncreased, an array of 4 int elements <a href="#1.9">[1.9]</a> <br>
+                      For i = 0, to length of originalArray <a href="#1.2">[1.2]</a> 
+                    </p>
+                    <p class="single">Set newArrayIncreased element at index i element of originalArray at index i </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+           $("#sidebar").mCustomScrollbar({
+             theme: "minimal"
+           });
+         
+           $('#sidebarCollapse').on('click', function () {
+             $('#sidebar, #content').toggleClass('active');
+             $('.collapse.in').toggleClass('in');
+             $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+           });
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             var $results=$('.result').text(function(){
+             })
+             var $checks=$(':checkbox[name^=fl]').change(function(){
+                 var $checked=$checks.filter(':checked');
+                 /* show all when nothing checked*/
+                 if(!$checked.length){
+                     $results.show();
+                     return;
+                 }
+                 /* create array of checked values */
+                 var checkedVals= $.map($checked, function(el){
+                     return el.value
+                 });
+                 /* hide all results, then filter for matches */
+                 $results.hide().filter(function(){
+                     var cats=$(this).data('category').split(' ');
+                     var checkMatches=$.grep(checkedVals, function(val){
+                         return $.inArray(val, cats) >-1;
+                     });
+                     return checkMatches.length === checkedVals.length;
+                  /* show resultas that match all checkboxes */
+                 }).show();
+         
+         
+             });
+         
+         });
+         
+      </script>
+   </body>
+</html>
