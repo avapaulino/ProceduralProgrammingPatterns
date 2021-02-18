@@ -768,8 +768,6 @@
                       <script>
                       $(document).ready(function() {
                           var $results=$('.result').text(function(){
-                              /* swap text with catgories to see results better */
-                              return $(this).data('category')
                           })
                           var $checks=$(':checkbox[name^=fl]').change(function(){
                               var $checked=$checks.filter(':checked');
